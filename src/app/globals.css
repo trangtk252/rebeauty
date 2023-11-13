@@ -1,29 +1,32 @@
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 
-@tailwind base; @tailwind components; @tailwind utilities; body {
-                                                               margin: 0
-                                                           }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-    text-decoration: none;
-    cursor: pointer
+body {
+    margin: 0;
 }
 
-header {
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header{
     display: flex;
     background-color: #c5d2c7;
     position: fixed;
-    top: 0;
+    top: 0px;
     width: 100vw;
-    z-index: 15;
-    height: 55px
+    z-index: 10;
+    height: 90px;
 }
 
-header img {
-    width: 140px;
+header img{
+    width: 180px;
     position: absolute;
-    margin-left: 45%;
-    top: -8px
+    margin-left: 40%;
 }
 
 .search {
@@ -31,33 +34,17 @@ header img {
     position: relative;
     display: flex;
     left: 15%;
-    width: 100%;
-    position: relative;
-    display: flex;
-    left: 15%;
-    width: 100%;
-    position: relative;
-    display: flex;
-    left: 15%;
-    width: 100%;
-    position: relative;
-    display: flex;
-    left: 15%;
-    width: 100%;
-    position: relative;
-    display: flex;
-    left: 15%
 }
 
 .searchTerm {
     width: 40%;
     border: 3px solid #ffff;
-    border-right: 0;
+    border-right: none;
     padding: 16px;
     height: 20px;
     border-radius: 10px 0 0 10px;
-    outline: 0;
-    color: #93939a
+    outline: none;
+    color: #93939a;
 }
 
 .searchButton {
@@ -69,68 +56,71 @@ header img {
     color: #c5d2c7;
     border-radius: 0 10px 10px 0;
     cursor: pointer;
-    font-size: 20px
+    font-size: 20px;
 }
 
-.wrap {
+.wrap{
     width: 30%;
     position: absolute;
-    top: 15px;
-    right: 0
+    top: 30px;
+    right: 0%;
 }
 
-.user {
+.user{
     position: absolute;
-    top: 17px;
-    right: 5%
+    top: 32px;
+    right: 5%;
 }
 
-.topnav {
-    top: 89px;
-    top: 55px;
-    top: 53px;
+/*Navigation*/
+.topnav{
     display: flex;
+    background-color: #c5d2c7;
     justify-content: center;
     align-items: center;
     position: fixed;
     width: 100vw;
-    top: 54px;
-    z-index: 10
+    top: 89px;
+    z-index: 10;
 }
 
-.topnav a {
+.topnav a{
     float: left;
     display: block;
-    font: 700 20px 'Open Sans', sans-serif;
-    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
     padding: 15px;
     text-decoration: none;
     text-align: center;
-    z-index: 10
+    z-index: 10;
 }
 
 .topnav a:hover {
     color: #93939a;
-    font-weight: bold
+    font-weight: bold;
 }
 
 .topnav .icon {
-    display: none
+    display: none;
 }
 
 .dropdown {
     float: left;
-    overflow: hidden
+    overflow: hidden;
 }
 
 .dropbtn {
     border: none;
-    outline: 0;
+    outline: none;
     background-color: #c5d2c7;
-    font: 700 20px 'Open Sans', sans-serif;
-    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
     padding: 10px 50px;
-    margin: 0
+    margin: 0;
 }
 
 .dropdown_content {
@@ -139,42 +129,38 @@ header img {
     background-color: #c5d2c7;
     z-index: 10;
     min-width: 140px;
-    padding: 10px
+    padding: 10px;
 }
 
 .dropdown_content a {
     display: block;
     float: none;
     padding: 5px;
-    color: #fff;
-    font: 18px 'Open Sans', sans-serif;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
     text-align: left;
-    text-decoration: none
+    text-decoration: none;
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn {
-    text-decoration: underline
+    text-decoration: underline;
 }
 
 .dropdown:hover .dropdown_content {
-    display: block
+    display: block;
 }
 
-.dropbtn i {
+.dropbtn i{
     position: absolute;
     padding-top: 15px;
-    position: absolute;
-    padding-top: 15px;
-    position: absolute;
-    padding-top: 15px;
-    position: absolute;
-    padding-top: 15px
 }
 
+/* Banner slide */
 .swiper-container {
     width: 86%;
     height: 40%;
-    overflow: hidden
+    overflow: hidden;
 }
 
 .swiper-slide {
@@ -192,81 +178,81 @@ header img {
     -webkit-box-align: center;
     -ms-flex-align: center;
     -webkit-align-items: center;
-    align-items: center
+    align-items: center;
 }
 
 .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover
+    object-fit: cover;
 }
 
-.swiper-button-prev::after, .swiper-button-next::after {
-    content: ''
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    content: '';
 }
 
 .swiper-button {
-    margin: 0 15px
+    margin: 0 15px;
 }
 
 .swiper-btn-icon {
     font-size: 50px;
-    color: #fff
+    color: #fff;
 }
 
-.ranking {
-    font: 36px 'Leckerli One', cursive;
+/*RANKING*/
+.ranking{
+    font-size: 36px;
     text-align: center;
-    color: #7d7d82
+    font-family: 'Leckerli One', cursive;
+    color: #7d7d82;
 }
 
-#rank-container {
-    width: 100vw;
+#rank-container{
     display: flex;
-    border-top: 2px solid #9a9aa1;
     justify-content: space-around;
-    height: 450px;
-    max-width: 100%;
-    margin-bottom: 50px
+    height: 473px;
+    margin-bottom: 50px;
+    width: 100vw;
 }
 
-.rank-product {
-    justify-content: center;
+.rank-product{
     display: flex;
-    width: 250px;
-    padding: 30px;
+    padding: 20px;
+    width: 24%;
     flex-direction: column;
-    justify-content: stretch;
-    align-items: center
+    justify-content: center;
+    align-items: center;
 }
 
-.rank-image img {
+.rank-image img{
     width: 100%;
-    width: auto;
-    height: 250px
 }
 
-.rank-name a {
+.rank-name a{
     text-align: center;
-    font: 18px 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
     color: #7d7d82;
     display: inline-block;
-    margin: 18px 15px 15px;
-    text-decoration: none
+    margin: 15px;
+    text-decoration: none;
 }
 
-.rank-name a:hover {
-    text-decoration: underline
+.rank-name a:hover{
+    text-decoration: underline;
 }
 
-.rank-star {
+.rank-star{
     display: block;
     text-align: center;
-    color: #f4b5b6
+    color: #f4b5b6;
 }
 
-footer {
+/*footer*/
+footer{
     display: flex;
     width: 100vw;
     justify-content: space-around;
@@ -274,403 +260,488 @@ footer {
     box-sizing: border-box;
     background-color: #c5d2c7;
     margin: 0 auto;
-    font-family: "'Open Sans'", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     height: 150px;
-    bottom: 0
+    bottom: 0;
 }
 
-.logo img {
+.logo img{
     width: 100px;
     border-radius: 100%;
-    margin-top: 20px
+    margin-top: 20px;
 }
 
-.company, .terms, .help, .connect {
+.company, .terms, .help, .connect{
     display: flex;
     flex-direction: column;
-    margin-right: 10px
+    margin-right: 10px;
 }
 
-h5 {
+h5{
     margin-bottom: 5px;
     font-size: 18px;
-    color: #fff
+    color: white;
 }
 
-.company a {
+.company a{
     color: #ffff;
     text-decoration: none;
-    margin-bottom: 0.5px
+    margin-bottom: 0.5px;
 }
 
-.company a:hover {
-    color: #93939a
+.company a:hover{
+    color: #93939a;
 }
 
-.smicon a {
-    color: #fff
+.smicon a{
+    color: white;
 }
 
+/* Media*/
 @media only screen and (max-width: 600px) {
-    header {
-        height: 50px
+    header{
+        height: 50px;
     }
-
-    header img {
+    header img{
         width: 100px;
         position: absolute;
-        margin-left: 10px
+        margin-left: 10px;
     }
-
-    section {
-        margin-top: 120px
+    section{
+        margin-top: 120px;
     }
-
-    .ranking {
+    .ranking{
         max-width: 100%;
-        font-size: 20px
+        font-size: 20px;
     }
-
-    #rank-container {
+    #rank-container{
         width: 100vw;
-        height: 230px
+        height: 230px;
     }
-
-    .rank-product {
-        padding: 10px
+    .rank-product{
+        padding: 10px;
     }
-
-    .rank-image img {
+    .rank-image img{
         width: 100%;
-        height: auto
+        height: auto;
     }
-
-    .rank-name a, .price p {
-        font-size: 9px
+    .rank-name a, .price p{
+        font-size: 9px;
     }
-
-    .rank-star {
-        font-size: 9px
+    .rank-star{
+        font-size: 9px;
     }
-
-    .topnav {
-        top: 49px
+    .topnav{
+        top: 49px;
     }
-
     .topnav a:not(:first-child), .dropdown .dropbtn {
-        display: none
+        display: none;
     }
-
     .topnav a.icon {
         float: right;
-        display: block
+        display: block;
     }
-
     .topnav.responsive {
         flex-direction: column;
         position: relative;
         overflow: visible;
-        align-items: flex-start
+        align-items: flex-start;
     }
-
     .topnav.responsive .icon {
         position: absolute;
         right: 0;
-        top: 0
+        top: 0;
     }
-
     .topnav.responsive a {
         float: none;
         display: block;
-        text-align: left
+        text-align: left;
     }
-
     .topnav.responsive .dropdown {
         float: none;
-        overflow: visible
+        overflow: visible;
     }
-
     .topnav.responsive .dropdown_content {
-        position: relative
+        position: relative;
     }
-
-    .topnav.responsive .dropdown_content a {
+    .topnav.responsive .dropdown_content a{
         text-align: left;
-        padding-left: 80px
+        padding-left: 80px;
     }
-
     .topnav.responsive .dropdown .dropbtn {
         display: block;
         width: 100%;
-        text-align: left
+        text-align: left;
     }
-
-    .dropbtn i {
-        margin-top: -50px
+    .dropbtn i{
+        margin-top: -50px;
     }
-
-    .dropdown_content {
-        margin-top: -30px
+    .dropdown_content{
+        margin-top: -30px;
     }
-
-    .wrap {
+    .wrap{
         width: 120px;
         position: absolute;
         justify-content: space-around;
         padding-right: 5px;
         margin-right: 60px;
-        top: 7px
+        top: 7px;
     }
-
-    .user {
+    .user{
         position: absolute;
         top: 10px;
-        right: 5%
+        right: 5%;
     }
-
-    footer {
+    footer{
         font-size: 8px;
-        height: 100px
+        height: 100px;
     }
-
-    h5 {
-        font-size: 10px
+    h5{
+        font-size: 10px;
     }
-
-    .logo img {
+    .logo img{
         width: 50px;
-        margin-top: 10px
+        margin-top: 10px;
     }
-
-    .company, .terms, .help, .connect {
-        margin-right: 5px
+    .company, .terms, .help, .connect{
+        margin-right: 5px;
     }
-
     .swiper-btn-icon {
-        font-size: 30px
+        font-size: 30px;
     }
-
     .swiper-button {
-        top: 37px
+        top: 37px;
     }
 }
 
 @media only screen and (min-width: 768px) {
-    header {
-        height: 90px
+    header{
+        height: 90px;
     }
-
-    header img {
+    header img{
         width: 180px;
         position: absolute;
-        margin-left: 40%
+        margin-left: 40%;
     }
-
-    .topnav {
-        top: 89px
+    .topnav{
+        top: 89px;
     }
-
-    .topnav a {
-        font-size: 18px
-    }
-
-    .dropbtn {
+    .topnav a{
         font-size: 18px;
-        padding: 10px 40px
     }
-
+    .dropbtn{
+        font-size: 18px;
+        padding: 10px 40px;
+    }
     .dropdown_content a {
-        font-size: 16px
+        font-size: 16px;
     }
-
-    .wrap {
+    .wrap{
         width: 30%;
         position: absolute;
         justify-content: space-around;
         padding-right: 15px;
-        top: 30px
+        top: 30px;
     }
-
-    .user {
+    .user{
         position: absolute;
         top: 32px;
-        right: 2.5%
+        right: 2.5%;
     }
-
-    footer {
+    footer{
         font-size: 15px;
-        height: 150px
+        height: 150px;
     }
-
-    h5 {
-        font-size: 18px
+    h5{
+        font-size: 18px;
     }
-
-    .logo img {
+    .logo img{
         width: 70px;
-        margin-top: 10px
+        margin-top: 10px;
     }
-
-    .company, .terms, .help, .connect {
-        margin-right: 5px
+    .company, .terms, .help, .connect{
+        margin-right: 5px;
     }
 }
 
 @media only screen and (min-width: 992px) {
-    header {
-        height: 90px
+    header{
+        height: 90px;
     }
-
-    header img {
+    header img{
         width: 180px;
         position: absolute;
-        margin-left: 40%
+        margin-left: 40%;
     }
-
-    .topnav {
-        top: 89px
+    .topnav{
+        top: 89px;
     }
-
-    .topnav a {
-        font-size: 20px
-    }
-
-    .dropbtn {
+    .topnav a{
         font-size: 20px;
-        padding: 10px 50px
     }
-
+    .dropbtn{
+        font-size: 20px;
+        padding: 10px 50px;
+    }
     .dropdown_content a {
-        font-size: 18px
+        font-size: 18px;
     }
-
-    .wrap {
+    .wrap{
         width: 30%;
         position: absolute;
         justify-content: space-around;
-        right: 0;
-        top: 30px
+        right: 0%;
+        top: 30px;
     }
-
-    .user {
+    .user{
         position: absolute;
         top: 32px;
-        right: 7%
+        right: 7%;
     }
-
-    section {
-        margin-top: 190px
+    section{
+        margin-top: 190px;
     }
-
-    .ranking {
+    .ranking{
         max-width: 100%;
-        font-size: 36px
+        font-size: 36px;
     }
-
-    #rank-container {
+    #rank-container{
         width: 100vw;
-        height: 520px
+        height: 520px;
     }
-
-    .rank-product {
-        padding: 30px
+    .rank-product{
+        padding: 30px;
     }
-
-    .rank-image img {
+    .rank-image img{
         width: 100%;
-        height: auto
+        height: auto;
     }
-
-    .rank-name a, .price p {
-        font-size: 20px
+    .rank-name a, .price p{
+        font-size: 20px;
     }
-
-    .rank-star {
-        font-size: 20px
+    .rank-star{
+        font-size: 20px;
     }
-
-    footer {
+    footer{
         font-size: 15px;
-        height: 150px
+        height: 150px;
     }
-
-    h5 {
-        font-size: 18px
+    h5{
+        font-size: 18px;
     }
-
-    .logo img {
+    .logo img{
         width: 100px;
-        margin-top: 10px
+        margin-top: 10px;
     }
-
-    .company, .terms, .help, .connect {
-        margin-right: 5px
+    .company, .terms, .help, .connect{
+        margin-right: 5px;
     }
 }
-
-body {
-    margin: 0
+body{
+    margin: 0;
 }
 
-#home-logo img {
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#home-logo img{
     width: 80px;
     border-radius: 100%;
     position: absolute;
     left: 5%;
-    top: 10%
+    top: 10%;
 }
 
+body {
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header{
+    display: flex;
+    background-color: #c5d2c7;
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    z-index: 15;
+    height: 55px;
+}
+
+header img{
+    width: 140px;
+    position: absolute;
+    margin-left: 45%;
+    top: -8px;
+}
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+    left: 15%;
+}
+
+
+.searchButton {
+    width: 50px;
+    height: 36px;
+    border: 1px solid #ffff;
+    background: #ffff;
+    text-align: center;
+    color: #c5d2c7;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.wrap{
+    width: 30%;
+    position: absolute;
+    top: 15px;
+    right: 0%;
+}
+
+.user{
+    position: absolute;
+    top: 17px;
+    right: 5%;
+}
+
+/*Navigation*/
+.topnav{
+    display: flex;
+    background-color: #c5d2c7;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    top: 55px;
+    z-index: 10;
+}
+
+.topnav a{
+    float: left;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    z-index: 10;
+}
+
+.topnav a:hover {
+    color: #93939a;
+    font-weight: bold;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropbtn {
+    border: none;
+    outline: none;
+    background-color: #c5d2c7;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    padding: 10px 50px;
+    margin: 0;
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #c5d2c7;
+    z-index: 10;
+    min-width: 140px;
+    padding: 10px;
+}
+
+.dropdown_content a {
+    display: block;
+    float: none;
+    padding: 5px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+    text-decoration: underline;
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+.dropbtn i{
+    position: absolute;
+    padding-top: 15px;
+}
+/*end*/
+
+/*Mobile*/
 @media screen and (max-width: 600px) {
-    section {
-        margin-top: 100px
+    section{
+        margin-top: 100px;
     }
-
-    ul.breadcrumb {
+    ul.breadcrumb{
         margin-bottom: 5px;
-        padding: 10px 20px
+        padding: 10px 20px;
+    }
+    ul.breadcrumb li{
+        font-size: 10px;
     }
 
-    ul.breadcrumb li {
-        font-size: 10px
+    .topnav{
+        top: 49px;
     }
-
-    .topnav {
-        top: 49px
-    }
-
     .topnav a:not(:first-child), .dropdown .dropbtn {
-        display: none
+        display: none;
     }
-
     .topnav a.icon {
         float: right;
-        display: block
+        display: block;
     }
-
-    header {
-        height: 50px
+    header{
+        height: 50px;
     }
-
-    header img {
+    header img{
         width: 130px;
         position: absolute;
         margin-left: 10px;
-        top: -4px
+        top: -4px;
     }
-
-    .wrap {
+    .wrap{
         width: 120px;
         position: absolute;
         justify-content: space-around;
         padding-right: 5px;
         margin-right: 60px;
-        top: 7px
+        top: 7px;
     }
-
-    .user {
+    .user{
         position: absolute;
         top: 10px;
-        right: 5%
+        right: 5%;
     }
 }
 
@@ -679,978 +750,1381 @@ body {
         flex-direction: column;
         position: relative;
         overflow: visible;
-        align-items: flex-start
+        align-items: flex-start;
     }
-
     .topnav.responsive .icon {
         position: absolute;
         right: 0;
-        top: 0
+        top: 0;
     }
-
     .topnav.responsive a {
         float: none;
         display: block;
-        text-align: left
+        text-align: left;
     }
-
     .topnav.responsive .dropdown {
         float: none;
-        overflow: visible
+        overflow: visible;
     }
-
     .topnav.responsive .dropdown_content {
-        position: relative
+        position: relative;
     }
-
-    .topnav.responsive .dropdown_content a {
+    .topnav.responsive .dropdown_content a{
         text-align: left;
-        padding-left: 80px
+        padding-left: 80px;
     }
-
     .topnav.responsive .dropdown .dropbtn {
         display: block;
         width: 100%;
-        text-align: left
+        text-align: left;
     }
 }
 
-@media only screen and (min-width: 768px) {
-    section {
-        margin-top: 100px
+@media only screen and (min-width: 768px){
+    section{
+        margin-top: 100px;
     }
-
-    ul.breadcrumb {
+    ul.breadcrumb{
         margin-bottom: 10px;
-        padding: 15px 20px
+        padding: 15px 20px;
     }
-
-    ul.breadcrumb li {
-        font-size: 15px
+    ul.breadcrumb li{
+        font-size: 15px;
     }
-
-    .topnav {
-        top: 49px
+    .topnav{
+        top: 49px;
     }
-
-    .topnav a {
-        font-size: 18px
-    }
-
-    .dropbtn {
+    .topnav a{
         font-size: 18px;
-        padding: 10px 40px
     }
-
+    .dropbtn{
+        font-size: 18px;
+        padding: 10px 40px;
+    }
     .dropdown_content a {
-        font-size: 16px
+        font-size: 16px;
     }
-
-    header {
-        height: 50px
+    header{
+        height: 50px;
     }
-
-    header img {
+    header img{
         width: 140px;
         position: absolute;
         margin-left: 40%;
-        top: -8px
+        top: -8px;
     }
-
-    .wrap {
+    .wrap{
         width: 30%;
         position: absolute;
         justify-content: space-around;
         padding-right: 15px;
-        top: 8px
+        top: 8px;
     }
-
-    .user {
+    .user{
         position: absolute;
         top: 10px;
-        right: 2.5%
+        right: 2.5%;
     }
 }
 
-@media only screen and (min-width: 992px) {
-    section {
-        margin-top: 140px
+@media only screen and (min-width: 992px){
+    section{
+        margin-top: 140px;
     }
-
-    ul.breadcrumb {
+    ul.breadcrumb{
         margin: 10px;
-        padding: 15px 20px
+        padding: 15px 20px;
     }
-
-    ul.breadcrumb li {
-        font-size: 18px
+    ul.breadcrumb li{
+        font-size: 18px;
     }
-
-    .topnav {
-        top: 54px
+    .topnav{
+        top: 54px;
     }
-
-    .topnav a {
-        font-size: 20px
-    }
-
-    .dropbtn {
+    .topnav a{
         font-size: 20px;
-        padding: 10px 45px
     }
-
+    .dropbtn{
+        font-size: 20px;
+        padding: 10px 45px;
+    }
     .dropdown_content a {
-        font-size: 18px
+        font-size: 18px;
     }
-
-    header {
-        height: 55px
+    header{
+        height: 55px;
     }
-
-    header img {
+    header img{
         width: 140px;
         position: absolute;
-        margin-left: 45%
+        margin-left: 45%;
     }
-
-    .wrap {
+    .wrap{
         width: 30%;
         position: absolute;
         justify-content: space-around;
-        right: 0;
-        top: 15px
+        right: 0%;
+        top: 15px;
     }
-
-    .user {
+    .user{
         position: absolute;
         top: 17px;
-        right: 5%
+        right: 5%;
     }
 }
 
+/*breadcrumb*/
 ul.breadcrumb {
     margin-top: 100px;
     padding: 15px 20px;
-    list-style: none
+    list-style: none;
 }
-
 ul.breadcrumb li {
     display: inline;
-    font: 18px/15px 'Open Sans', sans-serif;
-    color: #f4b5b6
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    color: #f4b5b6;
 }
-
-ul.breadcrumb li + li:before {
+ul.breadcrumb li+li:before {
     padding: 8px;
     color: #93939a;
-    content: "/\a0"
+    content: "/\00a0";
 }
-
 ul.breadcrumb li a {
     color: #93939a;
-    text-decoration: none
+    text-decoration: none;
 }
-
 ul.breadcrumb li a:hover {
-    text-decoration: underline
+    text-decoration: underline;
 }
 
+/*Body content*/
 .body-content {
     display: flex;
     justify-content: space-around;
-    font: 18px 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
     color: #7d7d82;
-    width: 100%
+    width: 100%;
 }
 
+/* Product line-up*/
 .product-lineup {
-    max-width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    max-width: 75%
+    max-width: 100%;
 }
 
-.rank-name a, .price p {
+#rank-container{
+    display: flex;
+    border-top: 2px solid #9a9aa1;
+    justify-content: space-around;
+    height: 450px;
+    max-width: 100%;
+    margin-bottom: 50px;
+}
+
+.rank-product{
+    display: flex;
+    width: 250px;
+    padding: 30px;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+}
+
+.rank-image img{
+    width: auto;
+    height: 250px;
+}
+
+.rank-name a, .price p{
     display: flex;
     flex-direction: column;
     text-decoration: none;
     text-align: center;
-    font: 18px/15px 'Open Sans', sans-serif;
-    color: #7d7d82
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    color: #7d7d82;
+    line-height: 15px;
+}
+
+.rank-name a {
+    margin-top: 18px;
+}
+
+.rank-name a:hover {
+    text-decoration: underline;
+}
+
+.rank-star{
+    display: block;
+    text-align: center;
+    color: #f4b5b6;
+}
+
+/*footer*/
+footer{
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    background-color: #c5d2c7;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    height: 150px;
+}
+
+.logo img{
+    width: 100px;
+    border-radius: 100%;
+    margin-top: 20px;
+}
+
+.company, .terms, .help, .connect{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+h5{
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: white;
+}
+
+.company a{
+    color: white;
+    text-decoration: none;
+    margin-bottom: 0.5px;
+}
+
+.company a:hover{
+    color: #93939a;
+}
+
+.smicon a{
+    color: white;
 }
 
 @media only screen and (max-width: 600px) {
-    ul.breadcrumb {
+    ul.breadcrumb{
         margin-bottom: 5px;
-        padding: 10px 20px
+        padding: 10px 20px;
     }
-
     ul.breadcrumb li {
-        font-size: 10px
+        font-size: 10px;
     }
-
-    .body-content {
-        max-width: 100%
+    .body-content{
+        max-width: 100%;
     }
-
-    .product-lineup {
-        max-width: 100%
+    .product-lineup{
+        max-width: 100%;
     }
-
-    #rank-container {
+    #rank-container{
         max-width: 100%;
         flex-wrap: wrap;
-        border-top: 0;
+        border-top: none;
         height: 100%;
-        padding: 0
+        padding: 0px;
     }
-
-    .rank-product {
+    .rank-product{
         max-width: 100px;
-        padding: 10px
-    }
-
-    .rank-image img {
-        width: auto;
-        height: 100px
-    }
-
-    .rank-name a, .price p {
-        font-size: 10px
-    }
-
-    .rank-star {
-        font-size: 10px
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    ul.breadcrumb {
-        margin-bottom: 5px;
-        padding: 10px 20px
-    }
-
-    ul.breadcrumb li {
-        font-size: 18px
-    }
-
-    .body-content {
-        max-width: 100%
-    }
-
-    .category a {
-        font-size: 18px
-    }
-
-    .product-lineup {
-        max-width: 100%
-    }
-
-    #rank-container {
-        max-width: 100%;
-        height: 100%;
         padding: 10px;
-        border-top: 2px solid #9a9aa1
     }
-
-    .rank-product {
-        max-width: 170px;
-        padding: 20px
-    }
-
-    .rank-image img {
+    .rank-image img{
         width: auto;
-        height: 170px
+        height: 100px;
     }
-
-    .rank-name a, .price p {
-        font-size: 15px;
-        line-height: 15px
-    }
-
-    .rank-name a {
-        line-height: 20px
-    }
-
-    .rank-star {
-        font-size: 15px
-    }
-}
-
-@media only screen and (min-width: 992px) {
-    ul.breadcrumb {
-        margin-bottom: 5px;
-        padding: 10px 20px
-    }
-
-    ul.breadcrumb li {
-        font-size: 18px
-    }
-
-    .body-content {
-        max-width: 100%
-    }
-
-    .category a {
-        font-size: 18px
-    }
-
-    .product-lineup {
-        max-width: 100%
-    }
-
-    #rank-container {
-        max-width: 100%;
-        height: 100%;
-        padding: 10px;
-        border-top: 2px solid #9a9aa1
-    }
-
-    .rank-product {
-        max-width: 250px;
-        padding: 20px
-    }
-
-    .rank-image img {
-        width: auto;
-        height: 250px
-    }
-
-    .rank-name a, .price p {
-        font-size: 15px;
-        line-height: 15px
-    }
-
-    .rank-name a {
-        line-height: 20px
-    }
-
-    .rank-star {
-        font-size: 15px
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .ranking {
-        max-width: 100%
-    }
-
-    #rank-container {
-        width: 100vw;
-        height: 230px
-    }
-
-    .rank-product {
-        padding: 10px
-    }
-
-    .rank-image img {
-        width: 100%;
-        height: auto
-    }
-
-    .rank-name a, .price p {
-        font-size: 9px
-    }
-
-    .rank-star {
-        font-size: 9px
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    footer {
-        font-size: 8px;
-        height: 100px
-    }
-
-    h5 {
-        font-size: 10px
-    }
-
-    .logo img {
-        width: 50px;
-        margin-top: 10px
-    }
-
-    .company, .terms, .help, .connect {
-        margin-right: 5px
-    }
-
-    .ranking {
-        font-size: 20px
-    }
-}
-
-@media only screen and (min-width: 600px) {
-    footer {
+    .rank-name a, .price p{
         font-size: 10px;
-        height: 100px
     }
-
-    h5 {
-        font-size: 15px
-    }
-
-    .logo img {
-        width: 50px;
-        margin-top: 10px
-    }
-
-    .company, .terms, .help, .connect {
-        margin-right: 5px
-    }
-
-    .ranking {
-        font-size: 20px
+    .rank-star{
+        font-size: 10px;
     }
 }
 
 @media only screen and (min-width: 768px) {
-    footer {
+    ul.breadcrumb{
+        margin-bottom: 5px;
+        padding: 10px 20px;
+    }
+    ul.breadcrumb li {
+        font-size: 18px;
+    }
+    .body-content{
+        max-width: 100%;
+    }
+    .category a{
+        font-size: 18px;
+    }
+    .product-lineup{
+        max-width: 100%;
+    }
+    #rank-container{
+        max-width: 100%;
+        height: 100%;
+        padding: 10px;
+        border-top: 2px solid #9a9aa1;
+    }
+    .rank-product{
+        max-width: 170px;
+        padding: 20px;
+    }
+    .rank-image img{
+        width: auto;
+        height: 170px;
+    }
+    .rank-name a, .price p{
         font-size: 15px;
-        height: 150px
+        line-height: 15px;
     }
-
-    h5 {
-        font-size: 18px
+    .rank-name a{
+        line-height: 20px;
     }
-
-    .logo img {
-        width: 70px;
-        margin-top: 10px
-    }
-
-    .company, .terms, .help, .connect {
-        margin-right: 5px
-    }
-
-    .ranking {
-        font-size: 33px
+    .rank-star{
+        font-size: 15px;
     }
 }
 
 @media only screen and (min-width: 992px) {
-    footer {
+    ul.breadcrumb{
+        margin-bottom: 5px;
+        padding: 10px 20px;
+    }
+    ul.breadcrumb li {
+        font-size: 18px;
+    }
+    .body-content{
+        max-width: 100%;
+    }
+    .category a{
+        font-size: 18px;
+    }
+    .product-lineup{
+        max-width: 100%;
+    }
+    #rank-container{
+        max-width: 100%;
+        height: 100%;
+        padding: 10px;
+        border-top: 2px solid #9a9aa1;
+    }
+    .rank-product{
+        max-width: 250px;
+        padding: 20px;
+    }
+    .rank-image img{
+        width: auto;
+        height: 250px;
+    }
+    .rank-name a, .price p{
         font-size: 15px;
-        height: 150px
+        line-height: 15px;
     }
-
-    h5 {
-        font-size: 18px
+    .rank-name a{
+        line-height: 20px;
     }
-
-    .logo img {
-        width: 100px;
-        margin-top: 10px
-    }
-
-    .company, .terms, .help, .connect {
-        margin-right: 5px
-    }
-
-    .ranking {
-        font-size: 36px
+    .rank-star{
+        font-size: 15px;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .dropbtn i {
-        margin-top: -50px
+    .ranking{
+        max-width: 100%;
     }
-
-    .dropdown_content {
-        margin-top: -30px
+    #rank-container{
+        width: 100vw;
+        height: 230px;
+    }
+    .rank-product{
+        padding: 10px;
+    }
+    .rank-image img{
+        width: 100%;
+        height: auto;
+    }
+    .rank-name a, .price p{
+        font-size: 9px;
+    }
+    .rank-star{
+        font-size: 9px;
     }
 }
 
+/*Footer*/
+@media only screen and (max-width: 600px){
+    footer{
+        font-size: 8px;
+        height: 100px;
+    }
+    h5{
+        font-size: 10px;
+    }
+    .logo img{
+        width: 50px;
+        margin-top: 10px;
+    }
+    .company, .terms, .help, .connect{
+        margin-right: 5px;
+    }
+    .ranking{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    footer{
+        font-size: 10px;
+        height: 100px;
+    }
+    h5{
+        font-size: 15px;
+    }
+    .logo img{
+        width: 50px;
+        margin-top: 10px;
+    }
+    .company, .terms, .help, .connect{
+        margin-right: 5px;
+    }
+    .ranking{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    footer{
+        font-size: 15px;
+        height: 150px;
+    }
+    h5{
+        font-size: 18px;
+    }
+    .logo img{
+        width: 70px;
+        margin-top: 10px;
+    }
+    .company, .terms, .help, .connect{
+        margin-right: 5px;
+    }
+    .ranking{
+        font-size: 33px;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    footer{
+        font-size: 15px;
+        height: 150px;
+    }
+    h5{
+        font-size: 18px;
+    }
+    .logo img{
+        width: 100px;
+        margin-top: 10px;
+    }
+    .company, .terms, .help, .connect{
+        margin-right: 5px;
+    }
+    .ranking{
+        font-size: 36px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .dropbtn i{
+        margin-top: -50px;
+    }
+    .dropdown_content{
+        margin-top: -30px;
+    }
+}
+body {
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header{
+    display: flex;
+    background-color: #c5d2c7;
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    z-index: 15;
+    height: 55px;
+}
+
+header img{
+    width: 140px;
+    position: absolute;
+    margin-left: 45%;
+    top: -8px;
+}
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+    left: 15%;
+}
+
+
+
+.wrap{
+    width: 30%;
+    position: absolute;
+    top: 15px;
+    right: 0%;
+}
+
+.user{
+    position: absolute;
+    top: 17px;
+    right: 5%;
+}
+
+/*Navigation*/
+.topnav{
+    display: flex;
+    background-color: #c5d2c7;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    top: 55px;
+    z-index: 10;
+}
+
+.topnav a{
+    float: left;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    z-index: 10;
+}
+
+.topnav a:hover {
+    color: #93939a;
+    font-weight: bold;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropbtn {
+    border: none;
+    outline: none;
+    background-color: #c5d2c7;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    padding: 10px 50px;
+    margin: 0;
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #c5d2c7;
+    z-index: 10;
+    min-width: 140px;
+    padding: 10px;
+}
+
+.dropdown_content a {
+    display: block;
+    float: none;
+    padding: 5px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+    text-decoration: underline;
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+.dropbtn i{
+    position: absolute;
+    padding-top: 15px;
+}
+
+/*breadcrumb*/
+ul.breadcrumb {
+    padding: 15px 20px;
+    list-style: none;
+}
+ul.breadcrumb li{
+    display: inline;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    color: #f4b5b6;
+    line-height: 15px;
+}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: #93939a;
+    content: "/\00a0";
+}
+ul.breadcrumb li a {
+    color: #93939a;
+    text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+    text-decoration: underline;
+}
+
+/*Body content*/
+.body-content {
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    color: #7d7d82;
+    width: 100%;
+}
+
+/* Side bar*/
 #side-bar {
     border-top: 2px solid #7d7d82;
     left: 50px;
-    max-width: 25%
+    max-width: 25%;
 }
-
-.category a {
+.category a{
     text-decoration: none;
     color: #7d7d82;
-    font-size: 20px
+    font-size: 20px;
 }
-
-.category a:hover {
-    text-decoration: underline
+.category a:hover{
+    text-decoration: underline;
 }
 
 .categories {
-    padding-left: 0
+    padding-left: 0px;
 }
 
 .category {
-    padding: 7px 0px
+    padding: 7px 0px;
 }
 
 .sub-category {
-    padding: 5px 0px
+    padding: 5px 0px;
 }
 
 .sub-categories {
-    padding-left: 20px
+    padding-left: 20px;
 }
 
 .category img {
     height: 10px;
-    padding: 2px
+    padding: 2px;
 }
 
 .hidden {
-    display: none
+    display: none;
 }
 
+/* Product line-up*/
+.product-lineup {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    max-width: 75%;
+}
+
+#rank-container{
+    display: flex;
+    border-top: 2px solid #9a9aa1;
+    justify-content: space-around;
+    height: 450px;
+    max-width: 100%;
+    margin-bottom: 50px;
+}
+
+.rank-product{
+    display: flex;
+    width: 250px;
+    padding: 30px;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+}
+
+.rank-image img{
+    width: auto;
+    height: 250px;
+}
+
+.rank-name a, .price p{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    color: #7d7d82;
+    line-height: 15px;
+}
+
+.rank-name a {
+    margin-top: 18px;
+}
+
+.rank-name a:hover {
+    text-decoration: underline;
+}
+
+.rank-star{
+    display: block;
+    text-align: center;
+    color: #f4b5b6;
+}
+
+/*Footer*/
+footer{
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    background-color: #c5d2c7;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    height: 150px;
+}
+
+.logo img{
+    width: 100px;
+    border-radius: 100%;
+    margin-top: 20px;
+}
+
+.company, .terms, .help, .connect{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+h5{
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: white;
+}
+
+.company a{
+    color: #ffff;
+    text-decoration: none;
+    margin-bottom: 0.5px;
+}
+
+.company a:hover{
+    color: #93939a;
+}
+
+.smicon a{
+    color: white;
+}
+
+/*Media*/
 @media only screen and (max-width: 600px) {
-    .topnav {
-        top: 49px
+    .topnav{
+        top: 49px;
     }
-
     .topnav a:not(:first-child), .dropdown .dropbtn {
-        display: none
+        display: none;
     }
-
     .topnav a.icon {
         float: right;
-        display: block
+        display: block;
     }
-
-    header {
-        height: 50px
+    header{
+        height: 50px;
     }
-
-    header img {
+    header img{
         width: 130px;
         position: absolute;
         margin-left: 10px;
-        top: -4px
+        top: -4px;
     }
-
-    .wrap {
+    .wrap{
         width: 120px;
         position: absolute;
         justify-content: space-around;
         padding-right: 5px;
         margin-right: 60px;
-        top: 7px
+        top: 7px;
     }
-
-    .user {
+    .user{
         position: absolute;
         top: 10px;
-        right: 5%
+        right: 5%;
     }
-
     .topnav.responsive {
         flex-direction: column;
         position: relative;
         overflow: visible;
-        align-items: flex-start
+        align-items: flex-start;
     }
-
     .topnav.responsive .icon {
         position: absolute;
         right: 0;
-        top: 0
+        top: 0;
     }
-
     .topnav.responsive a {
         float: none;
         display: block;
-        text-align: left
+        text-align: left;
     }
-
     .topnav.responsive .dropdown {
         float: none;
-        overflow: visible
+        overflow: visible;
     }
-
     .topnav.responsive .dropdown_content {
-        position: relative
+        position: relative;
     }
-
-    .topnav.responsive .dropdown_content a {
+    .topnav.responsive .dropdown_content a{
         text-align: left;
-        padding-left: 80px
+        padding-left: 80px;
     }
-
     .topnav.responsive .dropdown .dropbtn {
         display: block;
         width: 100%;
-        text-align: left
+        text-align: left;
     }
-
-    section {
-        margin-top: 100px
+    section{
+        margin-top: 100px;
     }
-
-    ul.breadcrumb {
+    ul.breadcrumb{
         margin-bottom: 5px;
-        padding: 10px 20px
+        padding: 10px 20px;
     }
-
-    ul.breadcrumb li {
-        font-size: 10px
+    ul.breadcrumb li{
+        font-size: 10px;
     }
-
-    .body-content {
-        max-width: 100%
+    .body-content{
+        max-width: 100%;
     }
-
-    #side-bar {
-        display: none
+    #side-bar{
+        display: none;
     }
-
-    .product-lineup {
-        max-width: 100%
+    .product-lineup{
+        max-width: 100%;
     }
-
-    #rank-container {
+    #rank-container{
         max-width: 100%;
         flex-wrap: wrap;
-        border-top: 0;
+        border-top: none;
         height: 100%;
-        padding: 0
+        padding: 0px;
     }
-
-    .rank-product {
+    .rank-product{
         max-width: 100px;
-        padding: 10px
+        padding: 10px;
     }
-
-    .rank-image img {
-        height: 100px
+    .rank-image img{
+        height: 100px;
     }
-
-    .rank-name a, .price p {
-        font-size: 10px
+    .rank-name a, .price p{
+        font-size: 10px;
     }
-
-    .rank-star {
-        font-size: 10px
+    .rank-star{
+        font-size: 10px;
     }
-
-    footer {
+    footer{
         font-size: 8px;
-        height: 100px
+        height: 100px;
     }
-
-    h5 {
-        font-size: 10px
+    h5{
+        font-size: 10px;
     }
-
-    .logo img {
+    .logo img{
         width: 50px;
-        margin-top: 10px
+        margin-top: 10px;
     }
-
-    .company, .terms, .help, .connect {
-        margin-right: 5px
+    .company, .terms, .help, .connect{
+        margin-right: 5px;
     }
 }
 
 @media only screen and (min-width: 768px) {
-    .topnav {
-        top: 49px
+    .topnav{
+        top: 49px;
     }
-
-    .topnav a {
-        font-size: 18px
-    }
-
-    .dropbtn {
+    .topnav a{
         font-size: 18px;
-        padding: 10px 40px
     }
-
+    .dropbtn{
+        font-size: 18px;
+        padding: 10px 40px;
+    }
     .dropdown_content a {
-        font-size: 16px
+        font-size: 16px;
     }
-
-    header {
-        height: 50px
+    header{
+        height: 50px;
     }
-
-    header img {
+    header img{
         width: 140px;
         position: absolute;
         margin-left: 40%;
-        top: -8px
+        top: -8px;
     }
-
-    .wrap {
+    .wrap{
         width: 30%;
         position: absolute;
         justify-content: space-around;
         padding-right: 15px;
-        top: 8px
+        top: 8px;
     }
-
-    .user {
+    .user{
         position: absolute;
         top: 10px;
-        right: 2.5%
+        right: 2.5%;
     }
-
-    section {
-        margin-top: 100px
+    section{
+        margin-top: 100px;
     }
-
-    ul.breadcrumb {
+    ul.breadcrumb{
         margin-bottom: 10px;
-        padding: 15px 20px
+        padding: 15px 20px;
     }
-
-    ul.breadcrumb li {
-        font-size: 15px
+    ul.breadcrumb li{
+        font-size: 15px;
     }
-
-    .body-content {
-        max-width: 100%
+    .body-content{
+        max-width: 100%;
     }
-
-    #side-bar {
-        max-width: 25%
+    #side-bar{
+        max-width: 25%;
     }
-
-    .category a {
-        font-size: 18px
+    .category a{
+        font-size: 18px;
     }
-
-    .product-lineup {
-        max-width: 75%
+    .product-lineup{
+        max-width: 75%;
     }
-
-    #rank-container {
+    #rank-container{
         max-width: 100%;
         height: 100%;
         padding: 10px;
-        border-top: 2px solid #9a9aa1
+        border-top: 2px solid #9a9aa1;
     }
-
-    .rank-product {
+    .rank-product{
         max-width: 170px;
-        padding: 20px
+        padding: 20px;
     }
-
-    .rank-image img {
-        height: 170px
+    .rank-image img{
+        height: 170px;
     }
-
-    .rank-name a, .price p {
+    .rank-name a, .price p{
         font-size: 15px;
-        line-height: 15px
+        line-height: 15px;
     }
-
-    .rank-name a {
-        line-height: 20px
+    .rank-name a{
+        line-height: 20px;
     }
-
-    .rank-star {
-        font-size: 15px
-    }
-
-    footer {
+    .rank-star{
         font-size: 15px;
-        height: 150px
     }
-
-    h5 {
-        font-size: 18px
+    footer{
+        font-size: 15px;
+        height: 150px;
     }
-
-    .logo img {
+    h5{
+        font-size: 18px;
+    }
+    .logo img{
         width: 70px;
-        margin-top: 10px
+        margin-top: 10px;
     }
-
-    .company, .terms, .help, .connect {
-        margin-right: 5px
+    .company, .terms, .help, .connect{
+        margin-right: 5px;
     }
 }
 
 @media only screen and (min-width: 992px) {
-    .topnav {
-        top: 54px
+    .topnav{
+        top: 54px;
     }
-
-    .topnav a {
-        font-size: 20px
-    }
-
-    .dropbtn {
+    .topnav a{
         font-size: 20px;
-        padding: 10px 45px
     }
-
+    .dropbtn{
+        font-size: 20px;
+        padding: 10px 45px;
+    }
     .dropdown_content a {
-        font-size: 18px
+        font-size: 18px;
     }
-
-    header {
-        height: 55px
+    header{
+        height: 55px;
     }
-
-    header img {
+    header img{
         width: 140px;
         position: absolute;
-        margin-left: 45%
+        margin-left: 45%;
     }
-
-    .wrap {
+    .wrap{
         width: 30%;
         position: absolute;
         justify-content: space-around;
-        right: 0;
-        top: 15px
+        right: 0%;
+        top: 15px;
     }
-
-    .user {
+    .user{
         position: absolute;
         top: 17px;
-        right: 5%
+        right: 5%;
     }
-
-    section {
-        margin-top: 150px
+    section{
+        margin-top: 150px;
     }
-
-    ul.breadcrumb {
+    ul.breadcrumb{
         margin: 10px;
-        padding: 15px 20px
+        padding: 15px 20px;
     }
-
-    ul.breadcrumb li {
-        font-size: 18px
+    ul.breadcrumb li{
+        font-size: 18px;
     }
-
-    .body-content {
-        max-width: 100%
+    .body-content{
+        max-width: 100%;
     }
-
-    #side-bar {
-        max-width: 25%
+    #side-bar{
+        max-width: 25%;
     }
-
-    .category a {
-        font-size: 18px
+    .category a{
+        font-size: 18px;
     }
-
-    .product-lineup {
-        max-width: 75%
+    .product-lineup{
+        max-width: 75%;
     }
-
-    #rank-container {
+    #rank-container{
         max-width: 100%;
         height: 100%;
         padding: 10px;
-        border-top: 2px solid #9a9aa1
+        border-top: 2px solid #9a9aa1;
     }
-
-    .rank-product {
+    .rank-product{
         max-width: 250px;
-        padding: 20px
+        padding: 20px;
     }
-
-    .rank-image img {
-        height: 250px
+    .rank-image img{
+        height: 250px;
     }
-
-    .rank-name a, .price p {
+    .rank-name a, .price p{
         font-size: 15px;
-        line-height: 15px
+        line-height: 15px;
     }
-
-    .rank-name a {
-        line-height: 20px
+    .rank-name a{
+        line-height: 20px;
     }
-
-    .rank-star {
-        font-size: 15px
-    }
-
-    footer {
+    .rank-star{
         font-size: 15px;
-        height: 150px
     }
-
-    h5 {
-        font-size: 18px
+    footer{
+        font-size: 15px;
+        height: 150px;
     }
-
-    .logo img {
+    h5{
+        font-size: 18px;
+    }
+    .logo img{
         width: 100px;
-        margin-top: 10px
+        margin-top: 10px;
     }
-
-    .company, .terms, .help, .connect {
-        margin-right: 5px
+    .company, .terms, .help, .connect{
+        margin-right: 5px;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .dropbtn i {
-        margin-top: -50px
+    .dropbtn i{
+        margin-top: -50px;
     }
-
-    .dropdown_content {
-        margin-top: -30px
+    .dropdown_content{
+        margin-top: -30px;
     }
 }
+body {
+    margin: 0;
+}
 
-.product {
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header{
     display: flex;
-    margin: auto auto 40px;
+    background-color: #c5d2c7;
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    z-index: 15;
+    height: 55px;
+}
+
+header img{
+    width: 140px;
+    position: absolute;
+    margin-left: 45%;
+    top: -8px;
+}
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+    left: 15%;
+}
+
+
+.wrap{
+    width: 30%;
+    position: absolute;
+    top: 15px;
+    right: 0%;
+}
+
+.user{
+    position: absolute;
+    top: 17px;
+    right: 5%;
+}
+
+/*Navigation*/
+.topnav{
+    display: flex;
+    background-color: #c5d2c7;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    top: 53px;
+    z-index: 10;
+}
+
+.topnav a{
+    float: left;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    z-index: 10;
+}
+
+.topnav a:hover {
+    color: #93939a;
+    font-weight: bold;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropbtn {
+    border: none;
+    outline: none;
+    background-color: #c5d2c7;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    padding: 10px 50px;
+    margin: 0;
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #c5d2c7;
+    z-index: 10;
+    min-width: 140px;
+    padding: 10px;
+}
+
+.dropdown_content a {
+    display: block;
+    float: none;
+    padding: 5px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+    text-decoration: underline;
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+.dropbtn i{
+    position: absolute;
+    padding-top: 15px;
+}
+
+/*footer*/
+footer{
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    background-color: #c5d2c7;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    height: 150px;
+    bottom: 0;
+}
+
+.logo img{
+    width: 100px;
+    border-radius: 100%;
+    margin-top: 20px;
+}
+
+.company, .terms, .help, .connect{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+h5{
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: white;
+}
+
+.company a{
+    color: #ffff;
+    text-decoration: none;
+    margin-bottom: 0.5px;
+}
+
+.company a:hover{
+    color: #93939a;
+}
+
+.smicon a{
+    color: white;
+}
+
+/*breadcrumb*/
+ul.breadcrumb {
+    padding: 15px 20px;
+    list-style: none;
+}
+ul.breadcrumb li{
+    display: inline;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    color: #f4b5b6;
+    line-height: 15px;
+}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: #93939a;
+    content: "/\00a0";
+}
+ul.breadcrumb li a {
+    color: #93939a;
+    text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+    text-decoration: underline;
+}
+/*end*/
+
+/*product*/
+.product{
+    display: flex;
+    margin: auto;
     width: 87%;
     height: 311px;
     background-color: #fceeed;
-    padding: 20px
+    padding: 20px;
+    margin-bottom: 40px;
 }
-
-.product-name {
-    font-family: "'Open Sans'", sans-serif;
+.product-name{
+    font-family: 'Open Sans', sans-serif;
     color: #7d7d82;
-    margin-left: 25px
+    margin-left: 25px;
 }
 
-.product-name a {
-    color: #7d7d82
+.product-name a{
+    color: #7d7d82;
 }
 
-.product-rank {
+.product-rank{
     display: block;
     color: #f4b5b6;
-    margin: 25px
+    margin: 25px;
 }
 
-.product-image {
-    max-width: 30% vw;
-    height: auto
+.product-image{
+    max-width: 30%vw;
+    height: auto;
 }
 
-.product-info {
-    flex-grow: 1
+.product-info{
+    flex-grow: 1;
 }
 
-.name {
+.name{
     font-size: 25px;
-    margin-bottom: 10px
+    margin-bottom: 10px;
 }
 
-.brand {
-    font-size: 15px
+.brand{
+    font-size: 15px;
 }
 
-.price {
-    margin-top: 0
+.price{
+    margin-top: 0px;
 }
 
+/*button*/
 .button {
     border-radius: 10px;
     padding: 16px 32px;
@@ -1658,886 +2132,1254 @@ ul.breadcrumb li a:hover {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 4px 4px 25px;
+    margin: 4px;
     transition-duration: 0.4s;
     cursor: pointer;
-    background-color: #fff;
+    background-color: white;
     color: #a9b7af;
-    border: 3px solid #a9b7af
+    border: 3px solid #a9b7af;
+    margin-left: 25px;
 }
 
-.button a {
-    color: #a9b7af
+.button a{
+    color: #a9b7af;
 }
 
-.button a:hover {
-    text-decoration: underline
+.button a:hover{
+    text-decoration: underline;
 }
 
-.review {
+/*REVIEW TAB*/
+.review{
     width: 87%;
-    margin: auto auto 40px;
+    margin: auto;
     border: 1px solid #93939a;
-    padding: 20px
+    padding: 20px;
+    margin-bottom: 40px;
 }
-
-.tab {
+.tab{
     overflow: hidden;
-    margin-bottom: 35px
+    margin-bottom: 35px;
 }
 
 .tab button {
     background-color: inherit;
     float: left;
     border: none;
-    outline: 0;
+    outline: none;
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
     font-size: 18px;
     color: #a9b7af;
-    margin-right: 20px
+    margin-right: 20px;
 }
 
 .tab button:hover {
     background-color: #a9b7af;
-    color: #fff;
-    border-radius: 10px
+    color: white;
+    border-radius: 10px;
 }
 
 .tab button.active {
     background-color: #a9b7af;
-    color: #fff;
-    border-radius: 10px
+    color: white;
+    border-radius: 10px;
 }
 
 .tab-content {
     display: none;
-    padding: 6px 12px
+    padding: 6px 12px;
 }
+/*end button*/
 
-.user-rank {
+.user-rank{
     display: block;
     color: #f4b5b6;
     margin: 20px 0px 0px 20px;
-    padding: 0
+    padding: 0;
 }
 
-#User-Review {
+#User-Review{
     display: flex;
-    flex-direction: column
+    flex-direction: column;
 }
 
-.review p {
-    font: 16px/30px 'Open Sans', sans-serif;
-    margin: 10px 0px 10px 20px
+.review p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin: 10px 0px 10px 20px;
+    line-height: 30px;
 }
 
-#user {
+#user{
     margin: 20px;
-    border-bottom: 1px solid #d4d4d9
+    border-bottom: 1px solid #d4d4d9;
 }
 
 .like-btn {
     padding: 10px 15px;
     background: #f4b5b6;
-    font: 18px "Open Sans", sans-serif;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
     border-radius: 5px;
-    color: #fff;
-    outline: 0;
+    color: white;
+    outline: none;
     border: none;
     cursor: pointer;
-    margin: 20px
+    margin: 20px;
 }
 
-#Overall ul {
-    font: 16px/30px 'Open Sans', sans-serif;
-    margin-top: 0
+#Overall ul{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 0px;
 }
 
+/*Mobile*/
 @media screen and (max-width: 600px) {
-    header {
-        height: 50px
+    header{
+        height: 50px;
     }
-
-    header img {
+    header img{
         width: 130px;
         position: absolute;
         margin-left: 10px;
-        top: -4px
+        top: -4px;
     }
-
-    section {
-        margin-top: 100px
+    section{
+        margin-top: 100px;
     }
-
-    .topnav {
-        top: 49px
+    .topnav{
+        top: 49px;
     }
-
     .topnav a:not(:first-child), .dropdown .dropbtn {
-        display: none
+        display: none;
     }
-
     .topnav a.icon {
         float: right;
-        display: block
+        display: block;
     }
-
     .topnav.responsive {
         flex-direction: column;
         position: relative;
         overflow: visible;
-        align-items: flex-start
+        align-items: flex-start;
     }
-
     .topnav.responsive .icon {
         position: absolute;
         right: 0;
-        top: 0
+        top: 0;
     }
-
     .topnav.responsive a {
         float: none;
         display: block;
-        text-align: left
+        text-align: left;
     }
-
     .topnav.responsive .dropdown {
         float: none;
-        overflow: visible
+        overflow: visible;
     }
-
     .topnav.responsive .dropdown_content {
-        position: relative
+        position: relative;
     }
-
-    .topnav.responsive .dropdown_content a {
+    .topnav.responsive .dropdown_content a{
         text-align: left;
-        padding-left: 80px
+        padding-left: 80px;
     }
-
     .topnav.responsive .dropdown .dropbtn {
         display: block;
         width: 100%;
-        text-align: left
+        text-align: left;
     }
-
-    .dropbtn i {
-        margin-top: -50px
+    .dropbtn i{
+        margin-top: -50px;
     }
-
-    .dropdown_content {
-        margin-top: -30px
+    .dropdown_content{
+        margin-top: -30px;
     }
-
-    .wrap {
+    .wrap{
         width: 120px;
         position: absolute;
         justify-content: space-around;
         padding-right: 5px;
         margin-right: 60px;
-        top: 7px
+        top: 7px;
     }
-
-    .user {
+    .user{
         position: absolute;
         top: 10px;
-        right: 5%
+        right: 5%;
     }
-
-    ul.breadcrumb {
+    ul.breadcrumb{
         margin-bottom: 5px;
-        padding: 10px 20px
+        padding: 10px 20px;
     }
-
-    ul.breadcrumb li {
-        font-size: 10px
+    ul.breadcrumb li{
+        font-size: 10px;
     }
-
-    .product {
+    .product{
         font-size: 8px;
-        max-height: 150px
+        max-height: 150px;
     }
-
-    .name {
-        font-size: 10px
+    .name{
+        font-size: 10px;
     }
-
-    .brand {
-        font-size: 10px
+    .brand{
+        font-size: 10px;
     }
-
-    .product-rank {
-        margin: 10px 0px 10px 25px
+    .product-rank{
+        margin: 10px 0px 10px 25px;
     }
-
-    .button {
+    .button{
         font-size: 10px;
         padding: 5px 8px;
-        margin-top: 0
+        margin-top: 0px;
     }
-
-    .tab button {
+    .tab button{
         font-size: 13px;
         padding: 10px 12px;
-        margin-right: 10px
+        margin-right: 10px;
     }
-
-    .review p {
-        font-size: 13px
+    .review p{
+        font-size: 13px;
     }
-
-    #Overall ul li {
-        font-size: 13px
+    #Overall ul li{
+        font-size: 13px;
     }
-
-    footer {
+    footer{
         font-size: 8px;
-        height: 100px
+        height: 100px;
     }
-
-    h5 {
-        font-size: 10px
+    h5{
+        font-size: 10px;
     }
-
-    .logo img {
+    .logo img{
         width: 50px;
-        margin-top: 10px
+        margin-top: 10px;
     }
-
-    .company, .terms, .help, .connect {
-        margin-right: 5px
+    .company, .terms, .help, .connect{
+        margin-right: 5px;
     }
 }
 
-@media only screen and (min-width: 768px) {
-    header {
-        height: 50px
+@media only screen and (min-width: 768px){
+    header{
+        height: 50px;
     }
-
-    header img {
+    header img{
         width: 140px;
         position: absolute;
         margin-left: 40%;
-        top: -8px
+        top: -8px;
     }
-
-    section {
-        margin-top: 100px
+    section{
+        margin-top: 100px;
     }
-
-    .topnav {
-        top: 49px
+    .topnav{
+        top: 49px;
     }
-
-    .topnav a {
-        font-size: 18px
-    }
-
-    .dropbtn {
+    .topnav a{
         font-size: 18px;
-        padding: 10px 40px
     }
-
+    .dropbtn{
+        font-size: 18px;
+        padding: 10px 40px;
+    }
     .dropdown_content a {
-        font-size: 16px
+        font-size: 16px;
     }
-
-    .wrap {
+    .wrap{
         width: 30%;
         position: absolute;
         justify-content: space-around;
         padding-right: 15px;
-        top: 8px
+        top: 8px;
     }
-
-    .user {
+    .user{
         position: absolute;
         top: 10px;
-        right: 2.5%
+        right: 2.5%;
     }
-
-    ul.breadcrumb {
+    ul.breadcrumb{
         margin-bottom: 10px;
-        padding: 15px 20px
+        padding: 15px 20px;
     }
-
-    ul.breadcrumb li {
-        font-size: 15px
+    ul.breadcrumb li{
+        font-size: 15px;
     }
-
-    .product {
+    .product{
         font-size: 13px;
-        max-height: 250px
+        max-height: 250px;
     }
-
-    .name {
-        font-size: 20px
+    .name{
+        font-size: 20px;
     }
-
-    .brand {
-        font-size: 13px
+    .brand{
+        font-size: 13px;
     }
-
-    .product-rank {
-        margin: 17px 0px 17px 25px
+    .product-rank{
+        margin: 17px 0px 17px 25px;
     }
-
-    .button {
+    .button{
         font-size: 16px;
-        padding: 10px 20px
+        padding: 10px 20px;
     }
-
-    .tab button {
+    .tab button{
         font-size: 18px;
         padding: 14px 16px;
-        margin-right: 15px
+        margin-right: 15px;
     }
-
-    .review p {
-        font-size: 16px
+    .review p{
+        font-size: 16px;
     }
-
-    #Overall ul li {
-        font-size: 16px
+    #Overall ul li{
+        font-size: 16px;
     }
-
-    footer {
+    footer{
         font-size: 15px;
-        height: 150px
+        height: 150px;
     }
-
-    h5 {
-        font-size: 18px
+    h5{
+        font-size: 18px;
     }
-
-    .logo img {
+    .logo img{
         width: 70px;
-        margin-top: 10px
+        margin-top: 10px;
     }
-
-    .company, .terms, .help, .connect {
-        margin-right: 5px
+    .company, .terms, .help, .connect{
+        margin-right: 5px;
     }
 }
 
-@media only screen and (min-width: 992px) {
-    header {
-        height: 50px
+@media only screen and (min-width: 992px){
+    header{
+        height: 50px;
     }
-
-    header img {
+    header img{
         width: 140px;
         position: absolute;
         margin-left: 40%;
-        top: -8px
+        top: -8px;
     }
-
-    section {
-        margin-top: 140px
+    section{
+        margin-top: 140px;
     }
-
-    .topnav {
-        top: 50px
+    .topnav{
+        top: 50px;
     }
-
-    .topnav a {
-        font-size: 20px
-    }
-
-    .dropbtn {
+    .topnav a{
         font-size: 20px;
-        padding: 10px 45px
     }
-
+    .dropbtn{
+        font-size: 20px;
+        padding: 10px 45px;
+    }
     .dropdown_content a {
-        font-size: 18px
+        font-size: 18px;
     }
-
-    .wrap {
+    .wrap{
         width: 30%;
         position: absolute;
         justify-content: space-around;
-        right: 0;
-        top: 15px
+        right: 0%;
+        top: 15px;
     }
-
-    .user {
+    .user{
         position: absolute;
         top: 17px;
-        right: 5%
+        right: 5%;
     }
-
-    ul.breadcrumb {
+    ul.breadcrumb{
         margin: 10px;
-        padding: 15px 20px
+        padding: 15px 20px;
     }
-
-    ul.breadcrumb li {
-        font-size: 18px
+    ul.breadcrumb li{
+        font-size: 18px;
     }
-
-    .product {
+    .product{
         font-size: 15px;
-        max-height: 300px
+        max-height: 300px;
     }
-
-    .name {
-        font-size: 25px
+    .name{
+        font-size: 25px;
     }
-
-    .brand {
-        font-size: 15px
+    .brand{
+        font-size: 15px;
     }
-
-    .product-rank {
-        margin: 25px
+    .product-rank{
+        margin: 25px;
     }
-
-    .button {
+    .button{
         font-size: 16px;
-        padding: 16px 32px
+        padding: 16px 32px;
     }
-
-    .tab button {
+    .tab button{
         font-size: 18px;
         padding: 14px 16px;
-        margin-right: 20px
+        margin-right: 20px;
     }
-
-    .review p {
-        font-size: 16px
+    .review p{
+        font-size: 16px;
     }
-
-    #Overall ul li {
-        font-size: 16px
+    #Overall ul li{
+        font-size: 16px;
     }
 }
+body {
+    margin: 0;
+}
 
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header{
+    display: flex;
+    background-color: #c5d2c7;
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    z-index: 15;
+    height: 55px;
+}
+
+header img{
+    width: 140px;
+    position: absolute;
+    margin-left: 45%;
+    top: -8px;
+}
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+    left: 15%;
+}
+
+
+
+.wrap{
+    width: 30%;
+    position: absolute;
+    top: 15px;
+    right: 0%;
+}
+
+.user{
+    position: absolute;
+    top: 17px;
+    right: 5%;
+}
+
+/*Navigation*/
+.topnav{
+    display: flex;
+    background-color: #c5d2c7;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    top: 53px;
+    z-index: 10;
+}
+
+.topnav a{
+    float: left;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    z-index: 10;
+}
+
+.topnav a:hover {
+    color: #93939a;
+    font-weight: bold;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropbtn {
+    border: none;
+    outline: none;
+    background-color: #c5d2c7;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    padding: 10px 50px;
+    margin: 0;
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #c5d2c7;
+    z-index: 10;
+    min-width: 140px;
+    padding: 10px;
+}
+
+.dropdown_content a {
+    display: block;
+    float: none;
+    padding: 5px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+    text-decoration: underline;
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+.dropbtn i{
+    position: absolute;
+    padding-top: 15px;
+}
+
+/*footer*/
+footer{
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    background-color: #c5d2c7;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    height: 150px;
+    bottom: 0;
+}
+
+.logo img{
+    width: 100px;
+    border-radius: 100%;
+    margin-top: 20px;
+}
+
+.company, .terms, .help, .connect{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+h5{
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: white;
+}
+
+.company a{
+    color: #ffff;
+    text-decoration: none;
+    margin-bottom: 0.5px;
+}
+
+.company a:hover{
+    color: #93939a;
+}
+
+.smicon a{
+    color: white;
+}
+
+/*breadcrumb*/
+ul.breadcrumb {
+    padding: 15px 20px;
+    list-style: none;
+}
+ul.breadcrumb li{
+    display: inline;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    color: #f4b5b6;
+    line-height: 15px;
+}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: #93939a;
+    content: "/\00a0";
+}
+ul.breadcrumb li a {
+    color: #93939a;
+    text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+    text-decoration: underline;
+}
+
+/*product*/
+.product{
+    display: flex;
+    margin: auto;
+    width: 87%;
+    height: 311px;
+    background-color: #fceeed;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+.product-name{
+    font-family: 'Open Sans', sans-serif;
+    color: #7d7d82;
+    margin-left: 25px;
+}
+
+.product-name a{
+    color: #7d7d82;
+}
+
+.product-rank{
+    display: block;
+    color: #f4b5b6;
+    margin: 25px;
+}
+
+.product-image{
+    max-width: 30%vw;
+    height: auto;
+}
+
+.product-info{
+    flex-grow: 1;
+}
+
+.name{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.brand{
+    font-size: 15px;
+}
+
+.price{
+    margin-top: 0px;
+}
+
+/*button*/
+.button {
+    border-radius: 10px;
+    color: #a9b7af;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    color: #a9b7af;
+    border: 3px solid #a9b7af;
+    margin-left: 25px;
+}
+
+.button a{
+    color: #a9b7af;
+}
+
+.button a:hover{
+    text-decoration: underline;
+}
+
+/*REVIEW TAB*/
+.review{
+    width: 87%;
+    margin: auto;
+    border: 1px solid #93939a;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+.tab{
+    overflow: hidden;
+    margin-bottom: 35px;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 18px;
+    color: #a9b7af;
+    margin-right: 20px;
+}
+
+.tab button:hover {
+    background-color: #a9b7af;
+    color: white;
+    border-radius: 10px;
+}
+
+.tab button.active {
+    background-color: #a9b7af;
+    color: white;
+    border-radius: 10px;
+}
+
+.tab-content {
+    display: none;
+    padding: 6px 12px;
+}
+/*end button*/
+
+.user-rank{
+    display: block;
+    color: #f4b5b6;
+    margin: 20px 0px 0px 20px;
+    padding: 0;
+}
+
+#User-Review{
+    display: flex;
+    flex-direction: column;
+}
+
+.review p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin: 10px 0px 10px 20px;
+    line-height: 30px;
+}
+
+#user{
+    margin: 20px;
+    border-bottom: 1px solid #d4d4d9;
+}
+
+.like-btn {
+    padding: 10px 15px;
+    background: #f4b5b6;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    border-radius: 5px;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin: 20px;
+}
+
+#Overall ul{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 0px;
+}
+
+/*Mobile*/
 @media screen and (max-width: 600px) {
-    header {
-        height: 50px
+    header{
+        height: 50px;
     }
-
-    header img {
+    header img{
         width: 130px;
         position: absolute;
         margin-left: 10px;
-        top: -4px
+        top: -4px;
     }
-
-    section {
-        margin-top: 100px
+    section{
+        margin-top: 100px;
     }
-
-    .topnav {
-        top: 49px
+    .topnav{
+        top: 49px;
     }
-
     .topnav a:not(:first-child), .dropdown .dropbtn {
-        display: none
+        display: none;
     }
-
     .topnav a.icon {
         float: right;
-        display: block
+        display: block;
     }
-
     .topnav.responsive {
         flex-direction: column;
         position: relative;
         overflow: visible;
-        align-items: flex-start
+        align-items: flex-start;
     }
-
     .topnav.responsive .icon {
         position: absolute;
         right: 0;
-        top: 0
+        top: 0;
     }
-
     .topnav.responsive a {
         float: none;
         display: block;
-        text-align: left
+        text-align: left;
     }
-
     .topnav.responsive .dropdown {
         float: none;
-        overflow: visible
+        overflow: visible;
     }
-
     .topnav.responsive .dropdown_content {
-        position: relative
+        position: relative;
     }
-
-    .topnav.responsive .dropdown_content a {
+    .topnav.responsive .dropdown_content a{
         text-align: left;
-        padding-left: 80px
+        padding-left: 80px;
     }
-
     .topnav.responsive .dropdown .dropbtn {
         display: block;
         width: 100%;
-        text-align: left
+        text-align: left;
     }
-
-    .dropbtn i {
-        margin-top: -50px
+    .dropbtn i{
+        margin-top: -50px;
     }
-
-    .dropdown_content {
-        margin-top: -30px
+    .dropdown_content{
+        margin-top: -30px;
     }
-
-    .wrap {
+    .wrap{
         width: 120px;
         position: absolute;
         justify-content: space-around;
         padding-right: 5px;
         margin-right: 60px;
-        top: 7px
+        top: 7px;
     }
-
-    .user {
+    .user{
         position: absolute;
         top: 10px;
-        right: 5%
+        right: 5%;
     }
-
-    ul.breadcrumb {
+    ul.breadcrumb{
         margin-bottom: 5px;
-        padding: 10px 20px
+        padding: 10px 20px;
     }
-
-    ul.breadcrumb li {
-        font-size: 10px
+    ul.breadcrumb li{
+        font-size: 10px;
     }
-
-    .product {
+    .product{
         font-size: 8px;
-        max-height: 150px
+        max-height: 150px;
     }
-
-    .name {
-        font-size: 10px
+    .name{
+        font-size: 10px;
     }
-
-    .brand {
-        font-size: 10px
+    .brand{
+        font-size: 10px;
     }
-
-    .product-rank {
-        margin: 10px 0px 10px 25px
+    .product-rank{
+        margin: 10px 0px 10px 25px;
     }
-
-    .button {
+    .button{
         font-size: 10px;
         padding: 5px 8px;
-        margin-top: 0
+        margin-top: 0px;
     }
-
-    .tab button {
+    .tab button{
         font-size: 13px;
         padding: 10px 12px;
-        margin-right: 10px
+        margin-right: 10px;
     }
-
-    .review p {
-        font-size: 13px
+    .review p{
+        font-size: 13px;
     }
-
-    #Overall ul li {
-        font-size: 13px
+    #Overall ul li{
+        font-size: 13px;
     }
-
-    footer {
+    footer{
         font-size: 8px;
-        height: 100px
+        height: 100px;
     }
-
-    h5 {
-        font-size: 10px
+    h5{
+        font-size: 10px;
     }
-
-    .logo img {
+    .logo img{
         width: 50px;
-        margin-top: 10px
+        margin-top: 10px;
     }
-
-    .company, .terms, .help, .connect {
-        margin-right: 5px
+    .company, .terms, .help, .connect{
+        margin-right: 5px;
     }
 }
 
-@media only screen and (min-width: 768px) {
-    header {
-        height: 50px
+@media only screen and (min-width: 768px){
+    header{
+        height: 50px;
     }
-
-    header img {
+    header img{
         width: 140px;
         position: absolute;
         margin-left: 40%;
-        top: -8px
+        top: -8px;
     }
-
-    section {
-        margin-top: 100px
+    section{
+        margin-top: 100px;
     }
-
-    .topnav {
-        top: 49px
+    .topnav{
+        top: 49px;
     }
-
-    .topnav a {
-        font-size: 18px
-    }
-
-    .dropbtn {
+    .topnav a{
         font-size: 18px;
-        padding: 10px 40px
     }
-
+    .dropbtn{
+        font-size: 18px;
+        padding: 10px 40px;
+    }
     .dropdown_content a {
-        font-size: 16px
+        font-size: 16px;
     }
-
-    .wrap {
+    .wrap{
         width: 30%;
         position: absolute;
         justify-content: space-around;
         padding-right: 15px;
-        top: 8px
+        top: 8px;
     }
-
-    .user {
+    .user{
         position: absolute;
         top: 10px;
-        right: 2.5%
+        right: 2.5%;
     }
-
-    ul.breadcrumb {
+    ul.breadcrumb{
         margin-bottom: 10px;
-        padding: 15px 20px
+        padding: 15px 20px;
     }
-
-    ul.breadcrumb li {
-        font-size: 15px
+    ul.breadcrumb li{
+        font-size: 15px;
     }
-
-    .product {
+    .product{
         font-size: 13px;
-        max-height: 250px
+        max-height: 250px;
     }
-
-    .name {
-        font-size: 20px
+    .name{
+        font-size: 20px;
     }
-
-    .brand {
-        font-size: 13px
+    .brand{
+        font-size: 13px;
     }
-
-    .product-rank {
-        margin: 17px 0px 17px 25px
+    .product-rank{
+        margin: 17px 0px 17px 25px;
     }
-
-    .button {
+    .button{
         font-size: 16px;
-        padding: 10px 20px
+        padding: 10px 20px;
     }
-
-    .tab button {
+    .tab button{
         font-size: 18px;
         padding: 14px 16px;
-        margin-right: 15px
+        margin-right: 15px;
     }
-
-    .review p {
-        font-size: 16px
+    .review p{
+        font-size: 16px;
     }
-
-    #Overall ul li {
-        font-size: 16px
+    #Overall ul li{
+        font-size: 16px;
     }
-
-    footer {
+    footer{
         font-size: 15px;
-        height: 150px
+        height: 150px;
     }
-
-    h5 {
-        font-size: 18px
+    h5{
+        font-size: 18px;
     }
-
-    .logo img {
+    .logo img{
         width: 70px;
-        margin-top: 10px
+        margin-top: 10px;
     }
-
-    .company, .terms, .help, .connect {
-        margin-right: 5px
+    .company, .terms, .help, .connect{
+        margin-right: 5px;
     }
 }
 
-@media only screen and (min-width: 992px) {
-    header {
-        height: 50px
+@media only screen and (min-width: 992px){
+    header{
+        height: 50px;
     }
-
-    header img {
+    header img{
         width: 140px;
         position: absolute;
         margin-left: 40%;
-        top: -8px
+        top: -8px;
     }
-
-    section {
-        margin-top: 140px
+    section{
+        margin-top: 140px;
     }
-
-    .topnav {
-        top: 50px
+    .topnav{
+        top: 50px;
     }
-
-    .topnav a {
-        font-size: 20px
-    }
-
-    .dropbtn {
+    .topnav a{
         font-size: 20px;
-        padding: 10px 45px
     }
-
+    .dropbtn{
+        font-size: 20px;
+        padding: 10px 45px;
+    }
     .dropdown_content a {
-        font-size: 18px
+        font-size: 18px;
     }
-
-    .wrap {
+    .wrap{
         width: 30%;
         position: absolute;
         justify-content: space-around;
-        right: 0;
-        top: 15px
+        right: 0%;
+        top: 15px;
     }
-
-    .user {
+    .user{
         position: absolute;
         top: 17px;
-        right: 5%
+        right: 5%;
     }
-
-    ul.breadcrumb {
+    ul.breadcrumb{
         margin: 10px;
-        padding: 15px 20px
+        padding: 15px 20px;
     }
-
-    ul.breadcrumb li {
-        font-size: 18px
+    ul.breadcrumb li{
+        font-size: 18px;
     }
-
-    .product {
+    .product{
         font-size: 15px;
-        max-height: 300px
+        max-height: 300px;
     }
-
-    .name {
-        font-size: 25px
+    .name{
+        font-size: 25px;
     }
-
-    .brand {
-        font-size: 15px
+    .brand{
+        font-size: 15px;
     }
-
-    .product-rank {
-        margin: 25px
+    .product-rank{
+        margin: 25px;
     }
-
-    .button {
+    .button{
         font-size: 16px;
-        padding: 16px 32px
+        padding: 16px 32px;
     }
-
-    .tab button {
+    .tab button{
         font-size: 18px;
         padding: 14px 16px;
-        margin-right: 20px
+        margin-right: 20px;
     }
-
-    .review p {
-        font-size: 16px
+    .review p{
+        font-size: 16px;
     }
-
-    #Overall ul li {
-        font-size: 16px
+    #Overall ul li{
+        font-size: 16px;
     }
 }
 
-section {
-    margin-top: 120px
+body {
+    margin: 0;
 }
 
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header{
+    display: flex;
+    background-color: #c5d2c7;
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    z-index: 15;
+    height: 55px;
+}
+
+header img{
+    width: 140px;
+    position: absolute;
+    margin-left: 45%;
+    top: -8px;
+}
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+    left: 15%;
+}
+
+.searchButton {
+    width: 50px;
+    height: 36px;
+    border: 1px solid #ffff;
+    background: #ffff;
+    text-align: center;
+    color: #c5d2c7;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.wrap{
+    width: 30%;
+    position: absolute;
+    top: 15px;
+    right: 0%;
+}
+
+.user{
+    position: absolute;
+    top: 17px;
+    right: 5%;
+}
+
+/*Navigation*/
+.topnav{
+    display: flex;
+    background-color: #c5d2c7;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    top: 54px;
+    z-index: 10;
+}
+
+.topnav a{
+    float: left;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    z-index: 10;
+}
+
+.topnav a:hover {
+    color: #93939a;
+    font-weight: bold;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropbtn {
+    border: none;
+    outline: none;
+    background-color: #c5d2c7;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    padding: 10px 50px;
+    margin: 0;
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #c5d2c7;
+    z-index: 10;
+    min-width: 140px;
+    padding: 10px;
+}
+
+.dropdown_content a {
+    display: block;
+    float: none;
+    padding: 5px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+    text-decoration: underline;
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+.dropbtn i{
+    position: absolute;
+    padding-top: 15px;
+}
+
+/*end*/
+
+section{
+    margin-top: 120px;
+}
+
+/*Mobile*/
 @media screen and (max-width: 600px) {
-    section {
-        margin-top: 100px
+    section{
+        margin-top: 100px;
     }
-
-    ul.breadcrumb {
+    ul.breadcrumb{
         margin-bottom: 5px;
-        padding: 10px 20px
+        padding: 10px 20px;
     }
-
-    ul.breadcrumb li {
-        font-size: 10px
+    ul.breadcrumb li{
+        font-size: 10px;
     }
-
-    .topnav {
-        top: 49px
+    .topnav{
+        top: 49px;
     }
-
     .topnav a:not(:first-child), .dropdown .dropbtn {
-        display: none
+        display: none;
     }
-
-    .dropbtn i {
-        margin-top: -50px
+    .dropbtn i{
+        margin-top: -50px;
     }
-
-    .dropdown_content {
-        margin-top: -30px
+    .dropdown_content{
+        margin-top: -30px;
     }
-
     .topnav a.icon {
         float: right;
-        display: block
+        display: block;
     }
-
-    header {
-        height: 50px
+    header{
+        height: 50px;
     }
-
-    header img {
+    header img{
         width: 130px;
         position: absolute;
         margin-left: 10px;
-        top: -4px
+        top: -4px;
     }
-
-    .wrap {
+    .wrap{
         width: 120px;
         position: absolute;
         justify-content: space-around;
         padding-right: 5px;
         margin-right: 60px;
-        top: 7px
+        top: 7px;
     }
-
-    .user {
+    .user{
         position: absolute;
         top: 10px;
-        right: 5%
+        right: 5%;
     }
 }
 
@@ -2546,344 +3388,351 @@ section {
         flex-direction: column;
         position: relative;
         overflow: visible;
-        align-items: flex-start
+        align-items: flex-start;
     }
-
     .topnav.responsive .icon {
         position: absolute;
         right: 0;
-        top: 0
+        top: 0;
     }
-
     .topnav.responsive a {
         float: none;
         display: block;
-        text-align: left
+        text-align: left;
     }
-
     .topnav.responsive .dropdown {
         float: none;
-        overflow: visible
+        overflow: visible;
     }
-
     .topnav.responsive .dropdown_content {
-        position: relative
+        position: relative;
     }
-
-    .topnav.responsive .dropdown_content a {
+    .topnav.responsive .dropdown_content a{
         text-align: left;
-        padding-left: 80px
+        padding-left: 80px;
     }
-
     .topnav.responsive .dropdown .dropbtn {
         display: block;
         width: 100%;
-        text-align: left
+        text-align: left;
     }
 }
 
-@media only screen and (min-width: 768px) {
-    section {
-        margin-top: 100px
+@media only screen and (min-width: 768px){
+    section{
+        margin-top: 100px;
     }
-
-    ul.breadcrumb {
+    ul.breadcrumb{
         margin-bottom: 10px;
-        padding: 15px 20px
+        padding: 15px 20px;
     }
-
-    ul.breadcrumb li {
-        font-size: 15px
+    ul.breadcrumb li{
+        font-size: 15px;
     }
-
-    .topnav {
-        top: 49px
+    .topnav{
+        top: 49px;
     }
-
-    .topnav a {
-        font-size: 18px
-    }
-
-    .dropbtn {
+    .topnav a{
         font-size: 18px;
-        padding: 10px 40px
     }
-
+    .dropbtn{
+        font-size: 18px;
+        padding: 10px 40px;
+    }
     .dropdown_content a {
-        font-size: 16px
+        font-size: 16px;
     }
-
-    header {
-        height: 50px
+    header{
+        height: 50px;
     }
-
-    header img {
+    header img{
         width: 140px;
         position: absolute;
         margin-left: 40%;
-        top: -8px
+        top: -8px;
     }
-
-    .wrap {
+    .wrap{
         width: 30%;
         position: absolute;
         justify-content: space-around;
         padding-right: 15px;
-        top: 8px
+        top: 8px;
     }
-
-    .user {
+    .user{
         position: absolute;
         top: 10px;
-        right: 2.5%
+        right: 2.5%;
     }
 }
 
-@media only screen and (min-width: 992px) {
-    section {
-        margin-top: 120px
+@media only screen and (min-width: 992px){
+    section{
+        margin-top: 120px;
     }
-
-    ul.breadcrumb {
+    ul.breadcrumb{
         margin: 10px;
-        padding: 15px 20px
+        padding: 15px 20px;
     }
-
-    ul.breadcrumb li {
-        font-size: 18px
+    ul.breadcrumb li{
+        font-size: 18px;
     }
-
-    .topnav {
-        top: 54px
+    .topnav{
+        top: 54px;
     }
-
-    .topnav a {
-        font-size: 20px
-    }
-
-    .dropbtn {
+    .topnav a{
         font-size: 20px;
-        padding: 10px 45px
     }
-
+    .dropbtn{
+        font-size: 20px;
+        padding: 10px 45px;
+    }
     .dropdown_content a {
-        font-size: 18px
+        font-size: 18px;
     }
-
-    header {
-        height: 55px
+    header{
+        height: 55px;
     }
-
-    header img {
+    header img{
         width: 140px;
         position: absolute;
-        margin-left: 45%
+        margin-left: 45%;
     }
-
-    .wrap {
+    .wrap{
         width: 30%;
         position: absolute;
         justify-content: space-around;
-        right: 0;
-        top: 15px
+        right: 0%;
+        top: 15px;
     }
-
-    .user {
+    .user{
         position: absolute;
         top: 17px;
-        right: 5%
+        right: 5%;
     }
 }
 
-@media only screen and (max-width: 600px) {
-    section {
-        margin-top: 120px
-    }
+/*footer*/
+footer{
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    background-color: #c5d2c7;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    height: 150px;
+    bottom: 0;
+}
 
-    footer {
+.logo img{
+    width: 100px;
+    border-radius: 100%;
+    margin-top: 20px;
+}
+
+.company, .terms, .help, .connect{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+h5{
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: white;
+}
+
+.company a{
+    color: #ffff;
+    text-decoration: none;
+    margin-bottom: 0.5px;
+}
+
+.company a:hover{
+    color: #93939a;
+}
+
+.smicon a{
+    color: white;
+}
+
+/*Footer*/
+@media only screen and (max-width: 600px){
+    section{
+        margin-top: 120px;
+    }
+    footer{
         font-size: 8px;
-        height: 100px
+        height: 100px;
     }
-
-    h5 {
-        font-size: 10px
-    }
-
-    .logo img {
-        width: 50px;
-        margin-top: 10px
-    }
-
-    .company, .terms, .help, .connect {
-        margin-right: 5px
-    }
-}
-
-@media only screen and (min-width: 600px) {
-    section {
-        margin-top: 120px
-    }
-
-    footer {
+    h5{
         font-size: 10px;
-        height: 100px
     }
-
-    h5 {
-        font-size: 15px
-    }
-
-    .logo img {
+    .logo img{
         width: 50px;
-        margin-top: 10px
+        margin-top: 10px;
     }
-
-    .company, .terms, .help, .connect {
-        margin-right: 5px
+    .company, .terms, .help, .connect{
+        margin-right: 5px;
     }
 }
 
-@media only screen and (min-width: 768px) {
-    section {
-        margin-top: 150px
+@media only screen and (min-width: 600px){
+    section{
+        margin-top: 120px;
     }
-
-    footer {
+    footer{
+        font-size: 10px;
+        height: 100px;
+    }
+    h5{
         font-size: 15px;
-        height: 150px
     }
-
-    h5 {
-        font-size: 18px
+    .logo img{
+        width: 50px;
+        margin-top: 10px;
     }
+    .company, .terms, .help, .connect{
+        margin-right: 5px;
+    }
+}
 
-    .logo img {
+@media only screen and (min-width: 768px){
+    section{
+        margin-top: 150px;
+    }
+    footer{
+        font-size: 15px;
+        height: 150px;
+    }
+    h5{
+        font-size: 18px;
+    }
+    .logo img{
         width: 70px;
-        margin-top: 10px
+        margin-top: 10px;
     }
-
-    .company, .terms, .help, .connect {
-        margin-right: 5px
+    .company, .terms, .help, .connect{
+        margin-right: 5px;
     }
 }
 
-@media only screen and (min-width: 992px) {
-    section {
-        margin-top: 160px
+@media only screen and (min-width: 992px){
+    section{
+        margin-top: 160px;
     }
-
-    footer {
+    footer{
         font-size: 15px;
-        height: 150px
+        height: 150px;
     }
-
-    h5 {
-        font-size: 18px
+    h5{
+        font-size: 18px;
     }
-
-    .logo img {
+    .logo img{
         width: 100px;
-        margin-top: 10px
+        margin-top: 10px;
     }
-
-    .company, .terms, .help, .connect {
-        margin-right: 5px
+    .company, .terms, .help, .connect{
+        margin-right: 5px;
     }
 }
 
-.container {
+/*Feedback form*/
+.container{
     margin-toptop: 120px;
-    font: 16px 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
     color: #7d7d82;
     display: flex;
     position: relative;
-    margin: auto auto 160px;
+    margin: auto;
     width: 87%;
     background-color: #fceeed;
-    padding: 20px
+    padding: 20px;
+    margin-bottom: 160px;
 }
 
-h2 {
+/*Star rating*/
+h2{
     margin-bottom: 50px;
-    margin-top: 5px
+    margin-top: 5px;
 }
 
-fieldset, .rating label {
-    margin: 0;
-    padding: 0
-}
+fieldset, .rating label { margin: 0; padding: 0; }
 
 .rating {
     position: absolute;
     padding: 45px 0px;
     font-size: 20px;
     border: none;
-    float: left
+    float: left;
 }
 
-.rating > input {
-    display: none
-}
-
+.rating > input { display: none; }
 .rating > label:before {
     margin: 5px;
-    font: 2.5em FontAwesome;
+    font-size: 2.5em;
+    font-family: FontAwesome;
     display: inline-block;
-    content: "\f005"
+    content: "\f005";
 }
 
 .rating > .half:before {
     content: "\f089";
-    position: absolute
+    position: absolute;
 }
 
 .rating > label {
     color: #7d7d82;
-    float: right
+    float: right;
 }
 
-.rating > input:checked ~ label, .rating:not(:checked) > label:hover, .rating:not(:checked) > label:hover ~ label {
-    color: #f4b5b6
-}
+/***** CSS Magic to Highlight Stars on Hover *****/
 
-.rating > input:checked + label:hover, .rating > input:checked ~ label:hover, .rating > label:hover ~ input:checked ~ label, .rating > input:checked ~ label:hover ~ label {
-    color: #fad7e4
-}
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #f4b5b6;  } /* hover previous stars in list */
 
-@media screen and (min-width: 600px) {
-    .rating {
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #fad7e4;}
+
+@media screen and (min-width: 600px){
+    .rating{
         font-size: 15px;
-        padding: 40px 0px
+        padding: 40px 0px;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .rating {
+    .rating{
         font-size: 15px;
-        padding: 40px 0px
+        padding: 40px 0px;
     }
 }
 
-@media only screen and (min-width: 768px) {
-    .rating a {
+@media only screen and (min-width: 768px){
+    .rating a{
         font-size: 20px;
-        padding: 40px 0px
+        padding: 40px 0px;
     }
 }
+/*end*/
 
 #review-form {
     display: flex;
     flex-direction: column;
     margin-left: 0.83em;
     margin-bottom: 0.83em;
-    width: 80%
+    width: 80%;
 }
-
 #review-form .btn {
     min-width: 100px;
     border-radius: 10px;
     color: #a9b7af;
-    background-color: #fff;
+    background-color: white;
     border: 3px solid #a9b7af;
     padding: 16px 12px;
     text-align: center;
@@ -2892,51 +3741,52 @@ fieldset, .rating label {
     font-size: 16px;
     margin: 4px 2px;
     transition-duration: 0.4s;
-    cursor: pointer
+    cursor: pointer;
 }
 
 #review-form .btn:hover {
     background-color: #a9b7af;
-    color: #fff
+    color: white;
 }
 
-#review-form input[type="text"], #review-form input[type="email"], #review-form textarea {
-    width: 100%
+#review-form input[type="text"], #review-form input[type="email"],
+#review-form textarea {
+    width: 100%;
 }
 
 #review-form .form-group {
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
-
-.form-control {
+.form-control{
     padding: 10px;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: white;
     border: 3px solid #a9b7af;
     margin: 4px 2px;
-    color: #93939a
+    color: #93939a;
 }
 
 #review-form .help-block {
     display: block;
     margin-top: 5px;
-    margin-bottom: 10px
+    margin-bottom: 10px;
 }
 
 #review-form input[type='submit'] {
     width: 100px;
     padding: 10px;
     border: 3px solid #a9b7af;
-    background: #fff;
+    background: white;
     color: #a9b7af;
     border-radius: 10px;
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
-    transition: 0.5s
+    transition: 0.5s;
 }
 
 #review-form input[type='submit']:hover {
     background-color: #a9b7af;
-    color: #fff
+    color: white;
 }
+

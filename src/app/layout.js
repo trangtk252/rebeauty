@@ -6,15 +6,14 @@ import Footer from "@/components/Footer";
 const inter = Inter({subsets: ['latin']})
 
 export const metadata = {
-    title: 'Rebeauty',
-    description: 'Rebeauty products',
+    title: 'ReBeauty',
+    description: 'Skin Care Product Review',
 }
 
 export default function RootLayout({children}) {
     return (
         <html lang="en">
         <head>
-            <title>ReBeauty - Skin Care Product Review</title>
             <meta charSet="utf-8"/>
             <meta httpEquiv="content-language" content="en-us"/>
             <meta name="viewport" content="width=device-width, initial-scale=1"/>
