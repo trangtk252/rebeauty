@@ -1,11 +1,11 @@
 import Products from "@/components/Products";
  const nav = [
      {
-         link: '/body/body-shampoo',
+         link: '/rebeauty/body/body-shampoo',
          name: 'Body Shampoo'
     },
      {
-         link: '/body/body-lotion',
+         link: '/rebeauty/body/body-lotion',
          name: 'Body Lotion'
      },
  ]

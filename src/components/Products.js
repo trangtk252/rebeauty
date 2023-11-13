@@ -2,7 +2,7 @@ function products({nav, items, name}) {
     return (
         <section>
             <ul className="breadcrumb">
-                <li><a href="/main">Home</a></li>
+                <li><a href="/rebeauty/main">Home</a></li>
                 <li><strong>{name}</strong></li>
             </ul>
             <div className="body-content">

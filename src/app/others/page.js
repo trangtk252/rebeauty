@@ -1,11 +1,11 @@
 import Products from "@/components/Products";
 const nav = [
     {
-        link: '/others/supplements',
+        link: '/rebeauty/others/supplements',
         name: 'Supplements'
     },
     {
-        link: '/others/sale',
+        link: '/rebeauty/others/sale',
         name: 'Sale'
     },
 ]

@@ -2,8 +2,8 @@ export default function Page() {
     return (
         <section className="">
             <ul className="breadcrumb">
-                <li><a href="/">Home</a></li>
-                <li><a href="/face">Face</a></li>
+                <li><a href="/rebeauty">Home</a></li>
+                <li><a href="/rebeauty/face">Face</a></li>
                 <li><strong>Cleanser</strong></li>
             </ul>
 
@@ -12,13 +12,13 @@ export default function Page() {
                     <div id="rank-container">
                         <div className="rank-product">
                             <div className="rank-image">
-                                <a href="/face/cleanser/cetaphil"><img
+                                <a href="/rebeauty/face/cleanser/cetaphil"><img
                                     src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1585257585-s-l640-1585257552.jpg"
                                     alt="Cetaphil-Daily Facial Cleanser"/></a>
                             </div>
                             <div className="rank-info">
                                 <div className="rank-name">
-                                    <a href="/face/cleanser/cetaphil"><strong>Cetaphil</strong><br/>Daily Facial Cleanser</a>
+                                    <a href="/rebeauty/face/cleanser/cetaphil"><strong>Cetaphil</strong><br/>Daily Facial Cleanser</a>
                                 </div>
                                 <div className="price">
                                     <p>¥1,590</p>
@@ -57,13 +57,13 @@ export default function Page() {
 
                         <div className="rank-product">
                             <div className="rank-image">
-                                <a href="/face/cleanser/TFS"><img
+                                <a href="/rebeauty/face/cleanser/TFS"><img
                                     src="http://product.hstatic.net/1000036599/product/thefaceshop-rice-water-bright-cleansing-foam-300ml_4909cb32a4bc45c290f4f162cdd26f02_grande.png"
                                     alt="The Face Shop-Cleasing Foam"/></a>
                             </div>
                             <div className="rank-info">
                                 <div className="rank-name">
-                                    <a href="/face/cleanser/TFS"><strong>The Face Shop</strong><br/>Rice Water Cleasing Foam</a>
+                                    <a href="/rebeauty/face/cleanser/TFS"><strong>The Face Shop</strong><br/>Rice Water Cleasing Foam</a>
                                 </div>
                                 <div className="price">
                                     <p>¥1,200</p>

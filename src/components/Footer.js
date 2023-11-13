@@ -14,16 +14,16 @@ function Footer() {
 
                 <div className="company">
                     <h5>Company</h5>
-                    <a href="/about-us">About Us</a>
-                    <a href="/partners">Partners</a>
+                    <a href="/rebeauty/about-us">About Us</a>
+                    <a href="/rebeauty/partners">Partners</a>
                 </div>
                 <div className="terms">
-                    <a href="/termsOfUse">
+                    <a href="/rebeauty/termsOfUse">
                         <h5>Terms of use</h5>
                     </a>
                 </div>
                 <div className="help">
-                    <a href="/helpCenter">
+                    <a href="/rebeauty/helpCenter">
                         <h5>Help center</h5>
                     </a>
                 </div>

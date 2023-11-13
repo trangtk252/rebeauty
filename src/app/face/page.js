@@ -1,19 +1,19 @@
 import Products from "@/components/Products";
 const nav = [
     {
-        link: '/face/cleanser',
+        link: '/rebeauty/face/cleanser',
         name: 'Cleanser'
     },
     {
-        link: '/face/toner',
+        link: '/rebeauty/face/toner',
         name: 'Toner'
     },
     {
-        link: '/face/moisturizer',
+        link: '/rebeauty/face/moisturizer',
         name: 'Moisturizer'
     },
     {
-        link: '/face/mask',
+        link: '/rebeauty/face/mask',
         name: 'Mask'
     },
 ]
@@ -32,7 +32,7 @@ const items = [
         name: 'Cetaphil',
         description: 'Daily Facial Cleanser',
         price: '¥1,590',
-        link: '/face/cleanser/cetaphil'
+        link: '/rebeauty/face/cleanser/cetaphil'
 
     },
     {
@@ -48,7 +48,7 @@ const items = [
         name: 'The Face Shop',
         description: 'Rice Water Cleasing Foam',
         price: '¥1,200',
-        link: '/face/cleanser/TFS'
+        link: '/rebeauty/face/cleanser/TFS'
     },
     {
         image: 'https://cdna2.zoeysite.com/Adzpo594RQGDpLcjBynL1z/cache=expiry:31536000//auto_image/compress/https://s3.amazonaws.com/zcom-media/sites/a0iE000000EnvnVIAR/media/catalog/product/2/0/202102_saborino_rn_pink5_780x780.jpg',

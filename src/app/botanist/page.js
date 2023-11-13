@@ -2,8 +2,8 @@ export default function Page() {
     return (
         <section>
             <ul className="breadcrumb">
-                <li><a href="/">Home</a></li>
-                <li><a href="/hair">Hair</a></li>
+                <li><a href="/rebeauty">Home</a></li>
+                <li><a href="/rebeauty/hair">Hair</a></li>
                 <li><strong>Botanist - Botanical Set Bouncy Volume</strong></li>
             </ul>
 
@@ -26,7 +26,7 @@ export default function Page() {
                         <i className="fa fa-star fa-2x"></i>
                         <i className="fas fa-star-half-alt fa-2x"></i>
                     </div>
-                    <button className="button"><a href="review.html"><strong>Write A Review</strong></a></button>
+                    <button className="button"><a href="/rebeauty/review"><strong>Write A Review</strong></a></button>
                 </div>
             </div>
 

@@ -10,9 +10,9 @@ export default function Page() {
         <section>
 
             <ul className="breadcrumb">
-                <li><a href="/">Home</a></li>
-                <li><a href="/face">Face</a></li>
-                <li><a href="/face/cleanser">Cleanser</a></li>
+                <li><a href="/rebeauty">Home</a></li>
+                <li><a href="/rebeauty/face">Face</a></li>
+                <li><a href="/rebeauty/face/cleanser">Cleanser</a></li>
                 <li><strong>Cetaphil - Daily Facial Cleanser</strong></li>
             </ul>
 
@@ -35,7 +35,7 @@ export default function Page() {
                         <i className="fa fa-star fa-2x"></i>
                         <i className="fas fa-star-half-alt fa-2x"></i>
                     </div>
-                    <button className="button"><a href="/face/cleanser/cetaphil/review"><strong>Write A Review</strong></a>
+                    <button className="button"><a href="/rebeauty/face/cleanser/cetaphil/review"><strong>Write A Review</strong></a>
                     </button>
                 </div>
             </div>

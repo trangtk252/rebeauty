@@ -5,11 +5,11 @@ const nav = [
         name: 'Shampoo'
     },
     {
-        link: '/hair/conditioner',
+        link: '/rebeauty/hair/conditioner',
         name: 'Conditioner'
     },
     {
-        link: '/hair/hair-oil',
+        link: '/rebeauty/hair/hair-oil',
         name: 'Hair Oil'
     },
 ]

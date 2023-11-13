@@ -2,8 +2,8 @@ export default function Page() {
     return (
         <section>
             <ul className="breadcrumb">
-                <li><a href="/">Home</a></li>
-                <li><a href="/face">Face</a></li>
+                <li><a href="/rebeauty">Home</a></li>
+                <li><a href="/rebeauty/face">Face</a></li>
                 <li><strong>Toner</strong></li>
             </ul>
 

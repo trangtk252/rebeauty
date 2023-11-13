@@ -2,9 +2,9 @@ export default function Page() {
     return (
         <section>
             <ul className="breadcrumb">
-                <li><a href="/">Home</a></li>
-                <li><a href="/face">Face</a></li>
-                <li><a href="/face/cleanser">Cleanser</a></li>
+                <li><a href="/rebeauty">Home</a></li>
+                <li><a href="/rebeauty/face">Face</a></li>
+                <li><a href="/rebeauty/face/cleanser">Cleanser</a></li>
                 <li><strong>The Face Shop - Rice Water Bright Cleansing Foam</strong></li>
             </ul>
 

@@ -26,7 +26,7 @@ export default function Home() {
                 <p className="ranking">High Ranking</p>
                 <div className="flex justify-around ">
                     <div className="  ">
-                            <a href="/botanist"><Image
+                            <a href="/rebeauty/botanist"><Image
                                 width={500}
                                 height={500}
                                 className=""
@@ -34,7 +34,7 @@ export default function Home() {
                                 alt="Botanist-Botanical Shampoo and Treatment Bouncy Volume with the peony and orange blossom scent"/></a>
                         <div className="rank-info">
                             <div className="rank-name">
-                                <a href="/botanist"><strong>Botanist</strong><br/>Botanical Shampoo & Treatment</a>
+                                <a href="/rebeauty/botanist"><strong>Botanist</strong><br/>Botanical Shampoo & Treatment</a>
                             </div>
                             <div className="rank-star">
                                 <i className="fa fa-star"></i>
@@ -66,7 +66,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="">
-                            <a href="/face/cleanser/TFS"><Image
+                            <a href="/rebeauty/face/cleanser/TFS"><Image
                                 width={500}
                                 height={500}
                                 className=""
@@ -74,7 +74,7 @@ export default function Home() {
                                 alt="The Face Shop - Rice Water Bright Cleansing Foam"/></a>
                         <div className="rank-info">
                             <div className="text-center">
-                                <a href="/face/cleanser/TFS" className="text-2xl "><strong>The Face Shop</strong><br/>Rice Water Bright Cleansing
+                                <a href="/rebeauty/face/cleanser/TFS" className="text-2xl "><strong>The Face Shop</strong><br/>Rice Water Bright Cleansing
                                     Foam</a>
                             </div>
                             <div className="rank-star">
