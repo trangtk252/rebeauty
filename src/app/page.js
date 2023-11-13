@@ -1,95 +1,94 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import Swiper from "swiper";
+import Carousel from "@/components/Carousel";
 
 export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    const swiperPortfolio = new Swiper(".banner-container", {
+        cssMode: true,
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+        },
+    });
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+    return (
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+            <div className="mt-40 ">
+                <Carousel ></Carousel>
+                <div className="py-20">
+                <p className="ranking">High Ranking</p>
+                <div className="flex justify-around ">
+                    <div className="  ">
+                            <a href="/botanist"><Image
+                                width={500}
+                                height={500}
+                                className=""
+                                src="https://botanistofficial.com/img/goods/S/btn318-d_27292c249b1d4c43913c9cba7d319e05.jpg"
+                                alt="Botanist-Botanical Shampoo and Treatment Bouncy Volume with the peony and orange blossom scent"/></a>
+                        <div className="rank-info">
+                            <div className="rank-name">
+                                <a href="/botanist"><strong>Botanist</strong><br/>Botanical Shampoo & Treatment</a>
+                            </div>
+                            <div className="rank-star">
+                                <i className="fa fa-star"></i>
+                                <i className="fa fa-star"></i>
+                                <i className="fa fa-star"></i>
+                                <i className="fa fa-star"></i>
+                                <i className="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="">
+                            <a href="#"><Image
+                                width={500}
+                                height={500}
+                                className=""
+                                src="https://images-na.ssl-images-amazon.com/images/I/51U3j5k5OzL._SL1200_.jpg"
+                                alt="The Seaweed Bath brand - Hydrating, Natural Seaweed Body Wash"/></a>
+                        <div className="rank-info">
+                            <div className="rank-name">
+                                <a href="#"><strong>The Seaweed Bath Co.</strong><br/>Seaweed Body Wash</a>
+                            </div>
+                            <div className="rank-star">
+                                <i className="fa fa-star"></i>
+                                <i className="fa fa-star"></i>
+                                <i className="fa fa-star"></i>
+                                <i className="fa fa-star"></i>
+                                <i className="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="">
+                            <a href="/face/cleanser/TFS"><Image
+                                width={500}
+                                height={500}
+                                className=""
+                                src="https://imgur.com/BVZnDKd.jpg"
+                                alt="The Face Shop - Rice Water Bright Cleansing Foam"/></a>
+                        <div className="rank-info">
+                            <div className="text-center">
+                                <a href="/face/cleanser/TFS" className="text-2xl "><strong>The Face Shop</strong><br/>Rice Water Bright Cleansing
+                                    Foam</a>
+                            </div>
+                            <div className="rank-star">
+                                <i className="fa fa-star"></i>
+                                <i className="fa fa-star"></i>
+                                <i className="fa fa-star"></i>
+                                <i className="fa fa-star"></i>
+                                <i className="fa fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+)
 }

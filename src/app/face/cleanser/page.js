@@ -1,24 +1,24 @@
 export default function Page() {
     return (
-        <section>
+        <section className="">
             <ul className="breadcrumb">
                 <li><a href="/">Home</a></li>
                 <li><a href="/face">Face</a></li>
                 <li><strong>Cleanser</strong></li>
             </ul>
 
-            <div className="body-content">
-                <div className="product-lineup">
+            <div className="  flex flex-col items-center justify-center">
+                <div className="product-lineup w-6/12">
                     <div id="rank-container">
                         <div className="rank-product">
                             <div className="rank-image">
-                                <a href="/cetaphil"><img
+                                <a href="/face/cleanser/cetaphil"><img
                                     src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1585257585-s-l640-1585257552.jpg"
                                     alt="Cetaphil-Daily Facial Cleanser"/></a>
                             </div>
                             <div className="rank-info">
                                 <div className="rank-name">
-                                    <a href="/cetaphil"><strong>Cetaphil</strong><br/>Daily Facial Cleanser</a>
+                                    <a href="/face/cleanser/cetaphil"><strong>Cetaphil</strong><br/>Daily Facial Cleanser</a>
                                 </div>
                                 <div className="price">
                                     <p>¥1,590</p>
@@ -57,13 +57,13 @@ export default function Page() {
 
                         <div className="rank-product">
                             <div className="rank-image">
-                                <a href="/TFS"><img
+                                <a href="/face/cleanser/TFS"><img
                                     src="http://product.hstatic.net/1000036599/product/thefaceshop-rice-water-bright-cleansing-foam-300ml_4909cb32a4bc45c290f4f162cdd26f02_grande.png"
                                     alt="The Face Shop-Cleasing Foam"/></a>
                             </div>
                             <div className="rank-info">
                                 <div className="rank-name">
-                                    <a href="/TFS"><strong>The Face Shop</strong><br/>Rice Water Cleasing Foam</a>
+                                    <a href="/face/cleanser/TFS"><strong>The Face Shop</strong><br/>Rice Water Cleasing Foam</a>
                                 </div>
                                 <div className="price">
                                     <p>¥1,200</p>
@@ -103,7 +103,6 @@ export default function Page() {
                             </div>
                         </div>
 
-                        <!--Product 5-->
                         <div className="rank-product">
                             <div className="rank-image">
                                 <a href=""><img
@@ -127,7 +126,6 @@ export default function Page() {
                             </div>
                         </div>
 
-                        <!--Product 6-->
                         <div className="rank-product">
                             <div className="rank-image">
                                 <a href=""><img
@@ -153,7 +151,6 @@ export default function Page() {
                     </div>
 
                     <div id="rank-container">
-                        <!--Product 7-->
                         <div className="rank-product">
                             <div className="rank-image">
                                 <a href=""><img src="https://www.sephora.com/productimages/sku/s1863588-main-zoom.jpg"
@@ -176,7 +173,6 @@ export default function Page() {
                             </div>
                         </div>
 
-                        <!--Product 8-->
                         <div className="rank-product">
                             <div className="rank-image">
                                 <a href=""><img
@@ -200,7 +196,6 @@ export default function Page() {
                             </div>
                         </div>
 
-                        <!--Product 9-->
                         <div className="rank-product">
                             <div className="rank-image">
                                 <a href=""><img

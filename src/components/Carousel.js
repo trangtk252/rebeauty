@@ -6,19 +6,19 @@ import {FaChevronLeft, FaChevronRight} from "react-icons/fa";
 function Carousel(){
     const slides = [
         {
-            url: '/images/vysa-charity-banner.png'
+            url: 'https://imgur.com/BmEC1qZ.jpg'
         },
         {
-            url: '/images/north-carolina-wrightsville-source-supplied-beach-192723-2.jpg'
+            url: 'https://imgur.com/V4JVUcx.jpg'
         },
         {
-            url: '/images/pretty-essvpmmgzzs4ja3b.jpg'
+            url: 'https://imgur.com/igBqpvV.jpg'
         },
         {
-            url: '/images/Pretty-Pictures-Fall.webp'
+            url: 'https://imgur.com/BmEC1qZ.jpg'
         },
         {
-            url: '/images/pretty-vibrant-ocean-sunset-jyqib3lw63fcq1z3.jpg'
+            url: 'https://imgur.com/V4JVUcx.jpg'
         },
     ]
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -50,11 +50,11 @@ function Carousel(){
                         }}
                     />
                 ))}
-                <div className='absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-md p-2 bg-primary text-accent cursor-pointer group'>
-                    <FaChevronLeft size={30} onClick={prevSlide} className=" opacity-50 group-hover:opacity-100"/>
+                <div className='absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl p-3 text-accent cursor-pointer group bg-white rounded-full'>
+                    <FaChevronLeft size={30} onClick={prevSlide} className=" opacity-50 group-hover:opacity-100 pr-1"/>
                 </div>
-                <div className='absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-md p-2 bg-primary text-accent cursor-pointer group'>
-                    <FaChevronRight size={30} onClick={nextSlide} className="opacity-50 group-hover:opacity-100"/>
+                <div className='absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl p-3 text-accent cursor-pointer group bg-white rounded-full'>
+                    <FaChevronRight size={30} onClick={nextSlide} className="opacity-50 group-hover:opacity-100 pl-1"/>
                 </div>
             </div>
             <div className='flex top-4 justify-center py-2'>
