@@ -6,20 +6,27 @@ function navbar() {
     if (pathname !== "/login") {
     return (
         <div>
-        <header>
-            <img src="https://imgur.com/beXWL1O.png"
-                 alt="ReBeauty - Cosmetic and Skin Care Products Review Page logo"/>
-            <div className="wrap">
-                <form className="search">
-                    <input type="text" className="searchTerm p-[16px]" placeholder="Search"/>
-                    <button type="submit" className="searchButton">
-                        <i className="fa fa-search"></i>
-                    </button>
-                </form>
+        <header className="flex w-full">
+            <div className="flex justify-center w-full">
+                <img src="https://imgur.com/beXWL1O.png"
+                     alt="ReBeauty - Cosmetic and Skin Care Products Review Page logo"/>
             </div>
-            <div className="user">
-                <a href="/rebeauty/login"><i className="far fa-user-circle fa-2x" style={{color: "white"}}></i></a>
+            <div className="flex justify-end my-3 w-full px-12">
+                <div className="flex justify-between ">
+                    <div className="bg-white px-3 flex rounded-xl mx-12">
+                        <input type="text"  placeholder="Search"/>
+                        <button type="submit">
+                            <i className="fa fa-search text-[#c5d2c7]"></i>
+                        </button>
+                    </div>
+
+                    <div className="">
+                            <a href="/rebeauty/login"><i className="far fa-user-circle fa-2x" style={{color: "white"}}></i></a>
+                    </div>
+                </div>
+
             </div>
+
         </header>
 
     <div className="topnav" id="myTopnav">

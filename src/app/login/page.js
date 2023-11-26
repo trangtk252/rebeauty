@@ -1,6 +1,6 @@
 export default function Page() {
     return (
-        <section className="mt-0">
+        <section className="mt-0 loginpage">
             <div className="container">
                 <div className="user signinBx">
                     <div className="imgBx"><img src="https://imgur.com/qA0t2vE.jpg"

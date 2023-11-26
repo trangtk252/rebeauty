@@ -1,4 +1,11 @@
+"use client"
+import {useState} from "react";
+
 export default function Page() {
+    const [tabNum, setTabNum] = useState(1);
+    const [like, setLike] = useState(false);
+    const [like2, setLike2] = useState(false);
+
     return (
         <section>
             <ul className="breadcrumb">
@@ -33,14 +40,16 @@ export default function Page() {
 
             <div className="review">
                 <div className="tab">
-                    <button className="tab-btn" onClick="openTab(event, 'Overall')" id="defaultOpen">
+                    <button className={`tab-btn ${tabNum === 1 ? " active" : ""} `} onClick={() => setTabNum(1)} >
                         <strong>Overall</strong></button>
-                    <button className="tab-btn" onClick="openTab(event, 'User-Review')"><strong>User Review</strong>
+                    <button className={`tab-btn ${tabNum === 2 ? " active": ""} `} onClick={() => setTabNum(2)}><strong>User Review</strong>
                     </button>
-                    <button className="tab-btn" onClick="openTab(event, 'Brand-Overview')"><strong>Brand
+                    <button className={`tab-btn ${tabNum === 3 ? " active": ""} `} onClick={() => setTabNum(3)}><strong>Brand
                         Overview</strong></button>
                 </div>
-                <div id="Overall" className="tabcontent">
+                {tabNum === 1 && (
+
+                    <div id="Overall" className="tabcontent">
                     <p>Of all the facial cleansers which are sold at a reasonable market price, The Faceshop rice water
                         bright cleansing foam stands out as a magical product which has a deep cleansing effect with the
                         ability to control sebum and tighten pores effectively. It is suitable for all types of skins,
@@ -71,8 +80,10 @@ export default function Page() {
                         massage beads which helps the cleansing process become more effective. These particles are small
                         in size and clean gently, not harshly. So those who have sensitive skin or are suffering from
                         mild damage can also use it.</p>
-                </div>
-                <div id="User-Review" className="tabcontent">
+                </div> ) }
+                {tabNum === 2 && (
+
+                    <div id="User-Review" className="tabcontent">
                     <div id="user">
                         <div className="user-rank">
                             <i className="fa fa-star"></i>
@@ -86,9 +97,9 @@ export default function Page() {
                             have dry skin but after I cleanse my face, it doesn't feel dry or flaky at all!!! Definitely
                             would recommend it to my friends!</p>
 
-                        <button className="like-btn" onClick="liked('comment1')">
-                            <span className="heart-icon"><i className="far fa-heart"></i></span>
-                            <span id="comment1">6</span> Like
+                        <button className="like-btn" onClick={() => setLike(!like)}>
+                            <span ><i className={`fa-heart mr-2 ${like ? " fas" : " far"}`}></i></span>
+                            <span id="comment1">{like ? "3" : "2"}</span> Like
                         </button>
                     </div>
 
@@ -105,13 +116,15 @@ export default function Page() {
                             This product has helped me reduce acne breakout! It also makes my skin brighter somehow!
                             Really love this one!</p>
 
-                        <button className="like-btn" onClick="liked('comment2')">
-                            <span className="heart-icon"><i className="far fa-heart"></i></span>
-                            <span id="comment2">8</span> Like
+                        <button className="like-btn " onClick={() => setLike2(!like2)}>
+                            <span><i className={` fa-heart mr-2 ${like2 ? " fas" : " far"}`}></i></span>
+                            <span id="comment2 ">{like2 ? "4" : "3"}</span> Likes
                         </button>
                     </div>
-                </div>
-                <div id="Brand-Overview" className="tabcontent">
+                </div> )}
+                {tabNum === 3 && (
+
+                    <div id="Brand-Overview" className="tabcontent">
                     <p>The Face Shop was founded by Jeong Un-ho and opened its first store in 2003 in the neighborhood
                         of Myeongdong. Right from the first days of development, The Face Shop has always made a
                         commitment that: “The energy source of “nature” in The Face Shop always respects the balance of
@@ -127,7 +140,7 @@ export default function Page() {
                                     magazine. <br/><br/> Currently, The Face Shop has more than 900 stores and business
                                         presence in 22 countries around the world.
                     </p>
-                </div>
+                </div>)}
             </div>
         </section>
     )

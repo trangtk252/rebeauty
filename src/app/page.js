@@ -73,7 +73,7 @@ export default function Home() {
                                 src="https://imgur.com/BVZnDKd.jpg"
                                 alt="The Face Shop - Rice Water Bright Cleansing Foam"/></a>
                         <div className="rank-info">
-                            <div className="text-center">
+                            <div className="rank-name">
                                 <a href="/rebeauty/face/cleanser/TFS" className="text-2xl "><strong>The Face Shop</strong><br/>Rice Water Bright Cleansing
                                     Foam</a>
                             </div>
