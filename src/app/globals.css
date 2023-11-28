@@ -2079,6 +2079,9 @@ ul.breadcrumb li a:hover {
 .product-name a{
     color: #7d7d82;
 }
+.fab {
+    margin-right: 10px;
+}
 
 .product-rank{
     display: block;

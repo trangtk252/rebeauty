@@ -1,4 +1,10 @@
+"use client"
+import {useState} from "react";
+
 export default function Page() {
+    const [tabNum, setTabNum] = useState(1);
+    const [like, setLike] = useState(false);
+    const [like2, setLike2] = useState(false);
     return (
         <section>
             <ul className="breadcrumb">
@@ -26,20 +32,22 @@ export default function Page() {
                         <i className="fa fa-star fa-2x"></i>
                         <i className="fas fa-star-half-alt fa-2x"></i>
                     </div>
-                    <button className="button"><a href="/rebeauty/review"><strong>Write A Review</strong></a></button>
+                    <button className="button"><a href="/rebeauty/face/cleanser/TFS/review"><strong>Write A Review</strong></a></button>
                 </div>
             </div>
 
             <div className="review">
                 <div className="tab">
-                    <button className="tab-btn" onClick="openTab(event, 'Overall')" id="defaultOpen">
+                    <button className={`tab-btn ${tabNum === 1 ? " active" : ""} `} onClick={() => setTabNum(1)} >
                         <strong>Overall</strong></button>
-                    <button className="tab-btn" onClick="openTab(event, 'User-Review')"><strong>User Review</strong>
+                    <button className={`tab-btn ${tabNum === 2 ? " active": ""} `} onClick={() => setTabNum(2)}><strong>User Review</strong>
                     </button>
-                    <button className="tab-btn" onClick="openTab(event, 'Brand-Overview')"><strong>Brand
+                    <button className={`tab-btn ${tabNum === 3 ? " active": ""} `} onClick={() => setTabNum(3)}><strong>Brand
                         Overview</strong></button>
                 </div>
-                <div id="Overall" className="tabcontent">
+                {tabNum === 1 && (
+
+                    <div id="Overall" className="tabcontent">
                     <p>Do you have frizzy, rough and split ends hair? Hair caring is an essential human need, and
                         choosing the right shampoo and conditioner is extremely necessary. If you choose the wrong
                         shampoo, it can cause dandruff, frizzy hair or hair loss. Therefore, today ReBeauty will bring
@@ -55,8 +63,10 @@ export default function Page() {
                     <p><strong>Texture:</strong><br/>
                         This product has a crystal clear gel texture. When you rub it against your hands, it will become
                         foamy.</p>
-                </div>
-                <div id="User-Review" className="tabcontent">
+                </div> )}
+                {tabNum === 2 && (
+
+                    <div id="User-Review" className="tabcontent">
                     <div id="user">
                         <div className="user-rank">
                             <i className="fa fa-star"></i>
@@ -72,9 +82,9 @@ export default function Page() {
                             But I cannot make sure that it is because of this product since I did change some other
                             products also.</p>
 
-                        <button className="like-btn" onClick="liked('comment1')">
-                            <span className="heart-icon"><i className="far fa-heart"></i></span>
-                            <span id="comment1">7</span> Like
+                        <button className="like-btn" onClick={() => setLike(!like)}>
+                            <span ><i className={`fa-heart mr-2 ${like ? " fas" : " far"}`}></i></span>
+                            <span id="comment1">{like ? "8" : "7"}</span> Like
                         </button>
                     </div>
 
@@ -92,13 +102,15 @@ export default function Page() {
                             changed ever since. If you're also in the same situation, try the set out! You'll never
                             regret it!!!</p>
 
-                        <button className="like-btn" onClick="liked('comment2')">
-                            <span className="heart-icon"><i className="far fa-heart"></i></span>
-                            <span id="comment2">5</span> Like
+                        <button className="like-btn " onClick={() => setLike2(!like2)}>
+                            <span><i className={` fa-heart mr-2 ${like2 ? " fas" : " far"}`}></i></span>
+                            <span id="comment2 ">{like2 ? "6" : "5"}</span> Likes
                         </button>
                     </div>
-                </div>
-                <div id="Brand-Overview" className="tabcontent">
+                </div>)}
+                {tabNum === 3 && (
+
+                    <div id="Brand-Overview" className="tabcontent">
                     <p>Botanist is a recently emerging Japanese cosmetic company. Although it does not have
                         a long history like other famous cosmetic brands, with certain steps, Botanist has gradually
                         asserted its name in the Asian market.
@@ -110,7 +122,7 @@ export default function Page() {
                         Botanist has body care lines such as: Shampoo, conditioner, hair wax, mask, lotion,
                         lotion....
                     </p>
-                </div>
+                </div>)}
             </div>
         </section>
     )

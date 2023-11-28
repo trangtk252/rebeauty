@@ -34,7 +34,7 @@ export default function Page() {
                         <i className="fa fa-star fa-2x"></i>
                         <i className="fas fa-star-half-alt fa-2x"></i>
                     </div>
-                    <button className="button"><a href="/face/cleanser/TFS/review"><strong>Write A Review</strong></a></button>
+                    <button className="button"><a href="/rebeauty/face/cleanser/TFS/review"><strong>Write A Review</strong></a></button>
                 </div>
             </div>
 

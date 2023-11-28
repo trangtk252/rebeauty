@@ -24,12 +24,12 @@ export default function Home() {
                 <Carousel ></Carousel>
                 <div className="py-20">
                 <p className="ranking">High Ranking</p>
-                <div className="flex justify-around ">
-                    <div className="  ">
+                <div className="flex justify-around gap-6 mx-6 pt-8">
+                    <div className="bg-[#fceeed] pb-10">
                             <a href="/rebeauty/botanist"><Image
                                 width={500}
                                 height={500}
-                                className=""
+                                className="p-7"
                                 src="https://botanistofficial.com/img/goods/S/btn318-d_27292c249b1d4c43913c9cba7d319e05.jpg"
                                 alt="Botanist-Botanical Shampoo and Treatment Bouncy Volume with the peony and orange blossom scent"/></a>
                         <div className="rank-info">
@@ -45,11 +45,11 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="">
+                    <div className="bg-[#fceeed] pb-10">
                             <a href="#"><Image
                                 width={500}
                                 height={500}
-                                className=""
+                                className="p-7"
                                 src="https://images-na.ssl-images-amazon.com/images/I/51U3j5k5OzL._SL1200_.jpg"
                                 alt="The Seaweed Bath brand - Hydrating, Natural Seaweed Body Wash"/></a>
                         <div className="rank-info">
@@ -65,11 +65,11 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="">
+                    <div className="bg-[#fceeed] pb-10">
                             <a href="/rebeauty/face/cleanser/TFS"><Image
                                 width={500}
                                 height={500}
-                                className=""
+                                className="p-7"
                                 src="https://imgur.com/BVZnDKd.jpg"
                                 alt="The Face Shop - Rice Water Bright Cleansing Foam"/></a>
                         <div className="rank-info">

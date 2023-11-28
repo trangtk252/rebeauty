@@ -29,7 +29,7 @@ function Footer() {
                 </div>
                 <div className="connect">
                     <h5>Connect with us</h5>
-                    <div className="smicon">
+                    <div className="smicon ">
                         <a href="https://www.facebook.com"><i className="fab fa-facebook-square fa-2x"></i></a>
                         <a href="https://www.instagram.com"><i className="fab fa-instagram-square fa-2x"></i></a>
                         <a href="https://www.twitter.com"><i className="fab fa-twitter-square fa-2x"></i></a>
