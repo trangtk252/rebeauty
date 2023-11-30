@@ -1,6 +1,6 @@
 export default function Page() {
     return (
-        <div className="mt-40 flex justify-center items-center">
+        <div className="mt-6 flex justify-center items-center">
                 <form className="bg-[#fceeed] w-10/12 p-12 text-[#7d7d82] mb-20" action="/rebeauty" method="post">
                     <div className="flex flex-col justify-start">
                         <h2 className="text-2xl font-bold">Write Your Review</h2>

@@ -73,38 +73,7 @@ header img{
 }
 
 /*Navigation*/
-.topnav{
-    display: flex;
-    background-color: #c5d2c7;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    width: 100vw;
-    top: 89px;
-    z-index: 10;
-}
 
-.topnav a{
-    float: left;
-    display: block;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    color: white;
-    padding: 15px;
-    text-decoration: none;
-    text-align: center;
-    z-index: 10;
-}
-
-.topnav a:hover {
-    color: #93939a;
-    font-weight: bold;
-}
-
-.topnav .icon {
-    display: none;
-}
 
 .dropdown {
     float: left;
@@ -143,9 +112,6 @@ header img{
     text-decoration: none;
 }
 
-.topnav a:hover, .dropdown:hover .dropbtn {
-    text-decoration: underline;
-}
 
 .dropdown:hover .dropdown_content {
     display: block;
@@ -307,9 +273,7 @@ h5{
         position: absolute;
         margin-left: 10px;
     }
-    section{
-        margin-top: 120px;
-    }
+
     .ranking{
         max-width: 100%;
         font-size: 20px;
@@ -498,9 +462,7 @@ h5{
         top: 32px;
         right: 7%;
     }
-    section{
-        margin-top: 190px;
-    }
+
     .ranking{
         max-width: 100%;
         font-size: 36px;
@@ -597,39 +559,6 @@ a{
     right: 5%;
 }
 
-/*Navigation*/
-.topnav{
-    display: flex;
-    background-color: #c5d2c7;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    width: 100vw;
-    top: 55px;
-    z-index: 10;
-}
-
-.topnav a{
-    float: left;
-    display: block;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    color: white;
-    padding: 15px;
-    text-decoration: none;
-    text-align: center;
-    z-index: 10;
-}
-
-.topnav a:hover {
-    color: #93939a;
-    font-weight: bold;
-}
-
-.topnav .icon {
-    display: none;
-}
 
 .dropdown {
     float: left;
@@ -668,9 +597,7 @@ a{
     text-decoration: none;
 }
 
-.topnav a:hover, .dropdown:hover .dropbtn {
-    text-decoration: underline;
-}
+
 
 .dropdown:hover .dropdown_content {
     display: block;
@@ -684,9 +611,7 @@ a{
 
 /*Mobile*/
 @media screen and (max-width: 600px) {
-    section{
-        margin-top: 100px;
-    }
+
     ul.breadcrumb{
         margin-bottom: 5px;
         padding: 10px 20px;
@@ -765,9 +690,7 @@ a{
 }
 
 @media only screen and (min-width: 768px){
-    section{
-        margin-top: 100px;
-    }
+
     ul.breadcrumb{
         margin-bottom: 10px;
         padding: 15px 20px;
@@ -812,9 +735,6 @@ a{
 }
 
 @media only screen and (min-width: 992px){
-    section{
-        margin-top: 140px;
-    }
     ul.breadcrumb{
         margin: 10px;
         padding: 15px 20px;
@@ -1277,38 +1197,6 @@ header img{
 }
 
 /*Navigation*/
-.topnav{
-    display: flex;
-    background-color: #c5d2c7;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    width: 100vw;
-    top: 55px;
-    z-index: 10;
-}
-
-.topnav a{
-    float: left;
-    display: block;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    color: white;
-    padding: 15px;
-    text-decoration: none;
-    text-align: center;
-    z-index: 10;
-}
-
-.topnav a:hover {
-    color: #93939a;
-    font-weight: bold;
-}
-
-.topnav .icon {
-    display: none;
-}
 
 .dropdown {
     float: left;
@@ -1347,9 +1235,7 @@ header img{
     text-decoration: none;
 }
 
-.topnav a:hover, .dropdown:hover .dropbtn {
-    text-decoration: underline;
-}
+
 
 .dropdown:hover .dropdown_content {
     display: block;
@@ -1603,9 +1489,7 @@ h5{
         width: 100%;
         text-align: left;
     }
-    section{
-        margin-top: 100px;
-    }
+
     ul.breadcrumb{
         margin-bottom: 5px;
         padding: 10px 20px;
@@ -1693,9 +1577,7 @@ h5{
         top: 10px;
         right: 2.5%;
     }
-    section{
-        margin-top: 100px;
-    }
+
     ul.breadcrumb{
         margin-bottom: 10px;
         padding: 15px 20px;
@@ -1788,9 +1670,7 @@ h5{
         top: 17px;
         right: 5%;
     }
-    section{
-        margin-top: 150px;
-    }
+
     ul.breadcrumb{
         margin: 10px;
         padding: 15px 20px;
@@ -1910,9 +1790,7 @@ header img{
     background-color: #c5d2c7;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    width: 100vw;
-    top: 53px;
+    /*position: fixed;*/
     z-index: 10;
 }
 
@@ -2235,9 +2113,8 @@ ul.breadcrumb li a:hover {
         margin-left: 10px;
         top: -4px;
     }
-    section{
-        margin-top: 100px;
-    }
+
+
     .topnav{
         top: 49px;
     }
@@ -2361,9 +2238,7 @@ ul.breadcrumb li a:hover {
         margin-left: 40%;
         top: -8px;
     }
-    section{
-        margin-top: 100px;
-    }
+
     .topnav{
         top: 49px;
     }
@@ -2450,9 +2325,7 @@ ul.breadcrumb li a:hover {
         margin-left: 40%;
         top: -8px;
     }
-    section{
-        margin-top: 140px;
-    }
+
     .topnav{
         top: 50px;
     }
@@ -2562,39 +2435,8 @@ header img{
     right: 5%;
 }
 
-/*Navigation*/
-.topnav{
-    display: flex;
-    background-color: #c5d2c7;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    width: 100vw;
-    top: 53px;
-    z-index: 10;
-}
 
-.topnav a{
-    float: left;
-    display: block;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    color: white;
-    padding: 15px;
-    text-decoration: none;
-    text-align: center;
-    z-index: 10;
-}
 
-.topnav a:hover {
-    color: #93939a;
-    font-weight: bold;
-}
-
-.topnav .icon {
-    display: none;
-}
 
 .dropdown {
     float: left;
@@ -2633,9 +2475,6 @@ header img{
     text-decoration: none;
 }
 
-.topnav a:hover, .dropdown:hover .dropbtn {
-    text-decoration: underline;
-}
 
 .dropdown:hover .dropdown_content {
     display: block;
@@ -2890,9 +2729,7 @@ ul.breadcrumb li a:hover {
         margin-left: 10px;
         top: -4px;
     }
-    section{
-        margin-top: 100px;
-    }
+
     .topnav{
         top: 49px;
     }
@@ -3016,9 +2853,7 @@ ul.breadcrumb li a:hover {
         margin-left: 40%;
         top: -8px;
     }
-    section{
-        margin-top: 100px;
-    }
+
     .topnav{
         top: 49px;
     }
@@ -3105,9 +2940,7 @@ ul.breadcrumb li a:hover {
         margin-left: 40%;
         top: -8px;
     }
-    section{
-        margin-top: 140px;
-    }
+
     .topnav{
         top: 50px;
     }
@@ -3229,38 +3062,6 @@ header img{
 }
 
 /*Navigation*/
-.topnav{
-    display: flex;
-    background-color: #c5d2c7;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    width: 100vw;
-    top: 54px;
-    z-index: 10;
-}
-
-.topnav a{
-    float: left;
-    display: block;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    color: white;
-    padding: 15px;
-    text-decoration: none;
-    text-align: center;
-    z-index: 10;
-}
-
-.topnav a:hover {
-    color: #93939a;
-    font-weight: bold;
-}
-
-.topnav .icon {
-    display: none;
-}
 
 .dropdown {
     float: left;
@@ -3299,9 +3100,6 @@ header img{
     text-decoration: none;
 }
 
-.topnav a:hover, .dropdown:hover .dropbtn {
-    text-decoration: underline;
-}
 
 .dropdown:hover .dropdown_content {
     display: block;
@@ -3314,15 +3112,10 @@ header img{
 
 /*end*/
 
-section{
-    margin-top: 120px;
-}
 
 /*Mobile*/
 @media screen and (max-width: 600px) {
-    section{
-        margin-top: 100px;
-    }
+
     ul.breadcrumb{
         margin-bottom: 5px;
         padding: 10px 20px;
@@ -3406,9 +3199,7 @@ section{
 }
 
 @media only screen and (min-width: 768px){
-    section{
-        margin-top: 100px;
-    }
+
     ul.breadcrumb{
         margin-bottom: 10px;
         padding: 15px 20px;
@@ -3453,9 +3244,7 @@ section{
 }
 
 @media only screen and (min-width: 992px){
-    section{
-        margin-top: 120px;
-    }
+
     ul.breadcrumb{
         margin: 10px;
         padding: 15px 20px;
@@ -3546,9 +3335,7 @@ h5{
 
 /*Footer*/
 @media only screen and (max-width: 600px){
-    section{
-        margin-top: 120px;
-    }
+
     footer{
         font-size: 8px;
         height: 100px;
@@ -3566,9 +3353,7 @@ h5{
 }
 
 @media only screen and (min-width: 600px){
-    section{
-        margin-top: 120px;
-    }
+
     footer{
         font-size: 10px;
         height: 100px;
@@ -3586,9 +3371,8 @@ h5{
 }
 
 @media only screen and (min-width: 768px){
-    section{
-        margin-top: 150px;
-    }
+
+
     footer{
         font-size: 15px;
         height: 150px;
@@ -3606,9 +3390,7 @@ h5{
 }
 
 @media only screen and (min-width: 992px){
-    section{
-        margin-top: 160px;
-    }
+
     footer{
         font-size: 15px;
         height: 150px;

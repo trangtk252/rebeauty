@@ -20,7 +20,7 @@ export default function Home() {
     return (
 
 
-            <div className="mt-40 ">
+            <div className="mt-6 ">
                 <Carousel ></Carousel>
                 <div className="py-20">
                 <p className="ranking">High Ranking</p>

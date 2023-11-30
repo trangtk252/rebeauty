@@ -1,7 +1,11 @@
+"use client"
+import {useState} from "react";
+
 export default function Page() {
+    const [active, setActive] = useState(false)
     return (
         <section className="mt-0 loginpage">
-            <div className="container">
+            <div className={`container ${active ? "active": ""}`}>
                 <div className="user signinBx">
                     <div className="imgBx"><img src="https://imgur.com/qA0t2vE.jpg"
                                                 alt="Cypress Body Oil -CBO from brand Mender and other products from the CBD line flat displayed on a white background with rocks and natural leaves"/>
@@ -14,7 +18,7 @@ export default function Page() {
                             <input type="submit" name="" value="Login"/>
                             <p className="createacc">
                                 Don't have an account ?
-                                <a href="#" onClick="toggleForm();">Sign Up.</a>
+                                <a href="#" onClick={() => setActive(true)}>Sign Up.</a>
                             </p>
                         </form>
                     </div>
@@ -30,7 +34,7 @@ export default function Page() {
                                     <input type="submit" name="" value="Sign Up"/>
                                     <p className="createacc">
                                         Already have an account ?
-                                        <a href="#" onClick="toggleForm();">Sign in.</a>
+                                        <a href="#" onClick={() => setActive(false)}>Sign in.</a>
                                     </p>
                         </form>
                     </div>
