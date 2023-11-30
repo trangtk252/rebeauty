@@ -6,7 +6,7 @@ function navbar() {
     const pathname = usePathname();
     if (pathname !== "/login") {
         return (
-            <div className="w-full grid grid-cols-5 bg-[#c5d2c7] px-4">
+            <div className="w-full grid grid-cols-10 bg-[#c5d2c7] px-4">
                 <div className="col-span-1 ...">
 
                     <div className=" my-5 flex justify-center">
@@ -15,7 +15,7 @@ function navbar() {
                     </div>
                 </div>
 
-                <div className="col-span-3 flex flex-col justify-end">
+                <div className="col-span-7 flex flex-col justify-end">
 
                     <div className="flex topnav justify-center bottom-1">
                     <a href="/rebeauty" className="active">Home</a>
@@ -64,7 +64,7 @@ function navbar() {
                     </div>
                 </div>
 
-                <div className=" col-span-1 flex flex-col justify-center ">
+                <div className=" col-span-2 flex flex-col justify-center ">
                     <div className="flex justify-center  mx-5">
                         <div className="bg-white px-3 flex rounded-xl mx-4">
                             <input className="outline-none text-gray-400" type="text" placeholder="Search"/>

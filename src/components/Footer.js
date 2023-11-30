@@ -5,7 +5,7 @@ function Footer() {
     const pathname = usePathname();
     if (pathname !== "/login") {
         return (
-            <div className=" bg-[#c5d2c7] flex py-8 justify-center font-bold sticky mb-10">
+            <div className=" bg-[#c5d2c7] flex py-8 justify-center font-bold sticky pb-16">
                 <div className="w-10/12 flex justify-between ">
                     <div className="logo">
                         <img src="https://imgur.com/9PK7Dz6.png"
