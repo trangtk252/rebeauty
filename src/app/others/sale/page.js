@@ -1,10 +1,12 @@
+import Products from "@/components/Products";
+
 export default function Page() {
     return (
         <section className="">
             <ul className="breadcrumb">
                 <li><a href="/rebeauty">Home</a></li>
-                <li><a href="/rebeauty/face">Face</a></li>
-                <li><strong>Cleanser</strong></li>
+                <li><a href="/rebeauty/others">Others</a></li>
+                <li><strong>Sale</strong></li>
             </ul>
 
             <div className="  flex flex-col items-center justify-center">
@@ -18,7 +20,8 @@ export default function Page() {
                             </div>
                             <div className="rank-info">
                                 <div className="rank-name">
-                                    <a href="/rebeauty/face/cleanser/cetaphil"><strong>Cetaphil</strong><br/>Daily Facial Cleanser</a>
+                                    <a href="/rebeauty/face/cleanser/cetaphil"><strong>Cetaphil</strong><br/>Daily
+                                        Facial Cleanser</a>
                                 </div>
                                 <div className="price">
                                     <p>¥1,590</p>
@@ -58,12 +61,13 @@ export default function Page() {
                         <div className="rank-product">
                             <div className="rank-image">
                                 <a href="/rebeauty/face/cleanser/TFS"><img
-                                    src="https://imgur.com/BVZnDKd.jpg"
+                                    src="http://product.hstatic.net/1000036599/product/thefaceshop-rice-water-bright-cleansing-foam-300ml_4909cb32a4bc45c290f4f162cdd26f02_grande.png"
                                     alt="The Face Shop-Cleasing Foam"/></a>
                             </div>
                             <div className="rank-info">
                                 <div className="rank-name">
-                                    <a href="/rebeauty/face/cleanser/TFS"><strong>The Face Shop</strong><br/>Rice Water Cleasing Foam</a>
+                                    <a href="/rebeauty/face/cleanser/TFS"><strong>The Face Shop</strong><br/>Rice Water
+                                        Cleasing Foam</a>
                                 </div>
                                 <div className="price">
                                     <p>¥1,200</p>
@@ -153,7 +157,7 @@ export default function Page() {
                     <div id="rank-container">
                         <div className="rank-product">
                             <div className="rank-image">
-                                <a href=""><img src="https://shop.haldi.com/cdn/shop/products/YTTP_Superfood_Cleanser_600x.png?v=1568756452"
+                                <a href=""><img src="https://www.sephora.com/productimages/sku/s1863588-main-zoom.jpg"
                                                 alt="Youth To The People-Superfood Face Cleanser"/></a>
                             </div>
                             <div className="rank-info">

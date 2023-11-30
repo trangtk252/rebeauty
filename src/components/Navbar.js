@@ -6,9 +6,9 @@ function navbar() {
     const pathname = usePathname();
     if (pathname !== "/login") {
         return (
-            <div className="w-full grid grid-rows-2 grid-flow-col bg-[#c5d2c7]">
+            <div className="w-full grid grid-rows-2 grid-flow-col bg-[#c5d2c7] px-4">
                 <div className="row-span-2 col-span-1 ...">
-                    <div className="mx-20 my-5">
+                    <div className=" my-5">
                         <Image className="rounded-full" src="https://imgur.com/9PK7Dz6.png" width={120} height={120}
                                alt="ReBeauty - Cosmetic and Skin Care Products Review Page logo"/>
                     </div>
