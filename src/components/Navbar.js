@@ -6,18 +6,18 @@ function navbar() {
     const pathname = usePathname();
     if (pathname !== "/login") {
         return (
-            <div className="w-full grid grid-rows-2 grid-flow-col bg-[#c5d2c7] px-4">
-                <div className="row-span-2 col-span-1 ...">
-                    <div className=" my-5">
-                        <Image className="rounded-full" src="https://imgur.com/9PK7Dz6.png" width={120} height={120}
+            <div className="w-full grid grid-cols-5 bg-[#c5d2c7] px-4">
+                <div className="col-span-1 ...">
+
+                    <div className=" my-5 flex justify-center">
+                        <Image className="rounded-full" src="https://imgur.com/9PK7Dz6.png" width={100} height={100}
                                alt="ReBeauty - Cosmetic and Skin Care Products Review Page logo"/>
                     </div>
                 </div>
-                <div className="col-span-2 ...">
-                </div>
 
-                <div className="col-span-2 ...">
-                    <div className="flex topnav">
+                <div className="col-span-3 flex flex-col justify-end">
+
+                    <div className="flex topnav justify-center bottom-1">
                     <a href="/rebeauty" className="active">Home</a>
                     <div className="dropdown">
                         <button className="dropbtn">
@@ -64,9 +64,9 @@ function navbar() {
                     </div>
                 </div>
 
-                <div className=" col-span-1 ...">
-                    <div className="flex justify-center  my-5">
-                        <div className="bg-white px-3 flex rounded-xl mx-12">
+                <div className=" col-span-1 flex flex-col justify-center ">
+                    <div className="flex justify-center  mx-5">
+                        <div className="bg-white px-3 flex rounded-xl mx-4">
                             <input className="outline-none text-gray-400" type="text" placeholder="Search"/>
                             <button type="submit">
                                 <i className="fa fa-search text-[#c5d2c7]"></i>
@@ -79,7 +79,6 @@ function navbar() {
                         </div>
                     </div>
                 </div>
-                <div className="col-span-1  ..."></div>
             </div>
 
         )

@@ -21,7 +21,7 @@ export default function Home() {
 
 
             <div className="mt-6 ">
-                <Carousel ></Carousel>
+                <Carousel />
                 <div className="py-20">
                 <p className="ranking">High Ranking</p>
                 <div className="flex justify-around gap-6 mx-6 pt-8">

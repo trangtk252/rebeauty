@@ -44,7 +44,7 @@ const items = [
 
     },
     {
-        image: 'http://product.hstatic.net/1000036599/product/thefaceshop-rice-water-bright-cleansing-foam-300ml_4909cb32a4bc45c290f4f162cdd26f02_grande.png',
+        image: 'https://cdn.webshopapp.com/shops/243452/files/382932349/image.jpg',
         name: 'The Face Shop',
         description: 'Rice Water Cleasing Foam',
         price: '¥1,200',
@@ -82,7 +82,7 @@ const items = [
 
     },
     {
-        image: 'https://online.lululun.com/Contents/ProductImages/0/r013_LL.jpg',
+        image: 'https://murasakicosmetics.com/cdn/shop/products/Lululun-Pure-Blue-Moist.jpg?v=1663606050',
         name: 'Lululun',
         description: 'Face Mask',
         price: '¥1,650',
